@@ -11,70 +11,40 @@ HGWatcher是一个定期收集HGDB、PostgreSQL及其所运行的操作系统的
 执行过程如下：
 ```shell
 [root@pgha3 HGWatcher]# sh getDBlist.sh 
-2
 The current environment has a set of 3 databases.
-3
 To monitor all databases, you need to write all database information to the file dblist.cfg, and then use the -dblist option.
-4
 You can also read the database information through the current script and then modify it according to the actual situation.
-5
 Do you want to generate a database information list [Y/N]?y
-6
 ​
-7
 Database benchmarksql did not install extended pg_stat_statements!
-8
 ​
-9
 Database highgo did not install extended pg_stat_statements!
-10
 ​
-11
 Database highgo did not install extended pg_stat_statements!
-12
 ##########################################################################################
-13
 # The output file is /HGWatcher/data/dblist.cfg
-14
 ##########################################################################################
 ```
 采集数据库信息需要使用插件pg_stat_statements，需要提前在数据库中配置插件pg_stat_statements。 
 执行结果放在HGWatcher目录下的data，名称为getDBlist.sh，内容如下：
 ```shell
 [DATABASE1]
-2
 #psql的路径
-3
 PSQL=/usr/pgsql-10/bin/psql            
-4
 #PostgreSQL的安装路径
-5
 PGDATAPATH=/var/lib/pgsql/10/data      
-6
 #PostgreSQL使用的端口
-7
 PGPORT=5432                            
-8
 #当前数据库的IP，默认使用127.0.0.1，需要设置psql -h 127.0.0.1可以直接登录数据库
-9
 PGHOST=127.0.0.1 
-10
 #登录数据库的用户，需要使用数据库的超级用户                   
-11
 PGUSER=postgres
-12
 #数据库软件的安装或管理用户，如有误，需要手动修改。
-13
 OSUSER=postgres
-14
 #当前所有创建的数据库，如果获取到的数据库不需要监控，可以直接删除
-15
 PGDATABASE=postgres,benchmarksql
-16
 #数据库是否可以不使用密码直接登录，1表示可以，0表示不可以，需要配置数据库，使其在本地可以不使用密码直接登录
-17
 DirectAccess=1
-18
 [ENDDATABASE1]
 ```
 2、定时收集系统信息 
