@@ -1,0 +1,103 @@
+Linux HGW v1.0.0
+zzz ***Sat Sep 29 11:01:32 CST 2018
+%Cpu(s): 38.0 us, 31.0 sy,  0.0 ni, 30.0 id,  0.0 wa,  0.0 hi,  1.0 si,  0.0 st
+KiB Mem :  3881156 total,  2149568 free,   284412 used,  1447176 buff/cache
+KiB Swap:  4194300 total,  4194300 free,        0 used.  1903032 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+  458 root      20   0   47508  11144  10640 S  2.0  0.3   0:06.24 systemd-journal
+ 7004 root      20   0  161952   2240   1580 R  2.0  0.1   0:00.03 top
+ 7041 postgres  20   0 2541628   9792   6736 S  2.0  0.3   0:00.02 postmaster
+    1 root      20   0  142040   4196   2608 S  1.0  0.1   0:10.68 systemd
+  613 root      16  -4   55508    900    492 S  1.0  0.0   0:01.01 auditd
+  641 dbus      20   0   61392   3304   1876 S  1.0  0.1   0:10.39 dbus-daemon
+ 1025 etcd      20   0   10.3g  63604  26608 S  1.0  1.6  59:02.08 etcd
+ 1340 postgres  20   0  253472   2256    676 S  1.0  0.1   0:14.33 postmaster
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.02 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:34.20 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S  0.0  0.0   1:03.92 rcu_sched
+   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain
+   11 root      rt   0       0      0      0 S  0.0  0.0   0:01.51 watchdog/0
+   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   14 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.07 khungtaskd
+   16 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback
+   17 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd
+   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset
+   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd
+   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md
+   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 edac-poller
+   27 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kswapd0
+   28 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd
+   29 root      39  19       0      0      0 S  0.0  0.0   0:00.72 khugepaged
+   30 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto
+   38 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld
+   40 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kmpath_rdacd
+   41 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kaluad
+   42 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kpsmoused
+   43 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf
+   57 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq
+   88 root      20   0       0      0      0 S  0.0  0.0   0:00.11 kauditd
+  261 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff
+  273 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0
+  274 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0
+  275 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1
+  276 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1
+  277 root      20   0       0      0      0 S  0.0  0.0   0:00.04 scsi_eh_2
+  279 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_2
+  309 root       0 -20       0      0      0 S  0.0  0.0   0:15.28 kworker/0:1H
+  351 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kdmflush
+zzz ***Sat Sep 29 11:02:02 CST 2018
+top - 11:02:04 up 2 days,  1:27,  4 users,  load average: 0.07, 0.12, 0.13
+Tasks: 176 total,   2 running, 174 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.0 us,  3.0 sy,  0.0 ni, 93.0 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  3881156 total,  2150900 free,   282868 used,  1447388 buff/cache
+KiB Swap:  4194300 total,  4194300 free,        0 used.  1904484 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+ 1025 etcd      20   0   10.3g  63604  26608 S  1.0  1.6  59:02.67 etcd
+ 1535 root      20   0  163480   6072   4676 S  1.0  0.2   0:00.56 sshd
+ 1537 root      20   0  116888   3692   1800 S  1.0  0.1   0:00.31 bash
+ 2094 postgres  20   0  519632  29500   5912 R  1.0  0.8  11:20.53 patroni
+ 7238 root      20   0  161956   2252   1580 R  1.0  0.1   0:00.04 top
+    1 root      20   0  142040   4196   2608 S  0.0  0.1   0:10.68 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.02 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:34.20 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S  0.0  0.0   1:03.93 rcu_sched
+   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain
+   11 root      rt   0       0      0      0 S  0.0  0.0   0:01.51 watchdog/0
+   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   14 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.07 khungtaskd
+   16 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback
+   17 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd
+   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset
+   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd
+   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md
+   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 edac-poller
+   27 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kswapd0
+   28 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd
+   29 root      39  19       0      0      0 S  0.0  0.0   0:00.72 khugepaged
+   30 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto
+   38 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld
+   40 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kmpath_rdacd
+   41 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kaluad
+   42 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kpsmoused
+   43 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf
+   57 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq
+   88 root      20   0       0      0      0 S  0.0  0.0   0:00.11 kauditd
+  261 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff
+  273 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0
+  274 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0
+  275 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1
+  276 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1
+  277 root      20   0       0      0      0 S  0.0  0.0   0:00.04 scsi_eh_2
+  279 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_2
+  309 root       0 -20       0      0      0 S  0.0  0.0   0:15.28 kworker/0:1H
+  351 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kdmflush

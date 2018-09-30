@@ -1,0 +1,18 @@
+zzz ***Sat Sep 29 11:01:32 CST 2018
+Filesystem              Inodes  IUsed    IFree IUse% Mounted on
+/dev/mapper/rhel-root 24012800 175481 23837319    1% /
+devtmpfs                480902    351   480551    1% /dev
+tmpfs                   485144      4   485140    1% /dev/shm
+tmpfs                   485144    577   484567    1% /run
+tmpfs                   485144     16   485128    1% /sys/fs/cgroup
+/dev/sda1               101928    325   101603    1% /boot
+tmpfs                   485144      1   485143    1% /run/user/0
+zzz ***Sat Sep 29 11:02:02 CST 2018
+Filesystem              Inodes  IUsed    IFree IUse% Mounted on
+/dev/mapper/rhel-root 24012800 175486 23837314    1% /
+devtmpfs                480902    351   480551    1% /dev
+tmpfs                   485144      4   485140    1% /dev/shm
+tmpfs                   485144    577   484567    1% /run
+tmpfs                   485144     16   485128    1% /sys/fs/cgroup
+/dev/sda1               101928    325   101603    1% /boot
+tmpfs                   485144      1   485143    1% /run/user/0

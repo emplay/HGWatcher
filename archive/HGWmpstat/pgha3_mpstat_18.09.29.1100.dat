@@ -1,0 +1,29 @@
+Linux HGW v1.0.0
+zzz ***Sat Sep 29 11:01:32 CST 2018
+Linux 3.10.0-862.el7.x86_64 (pgha3) 	09/29/2018 	_x86_64_	(1 CPU)
+
+11:01:32 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:01:33 AM  all   48.48    0.00   50.51    0.00    0.00    1.01    0.00    0.00    0.00    0.00
+11:01:33 AM    0   48.48    0.00   50.51    0.00    0.00    1.01    0.00    0.00    0.00    0.00
+
+11:01:33 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:01:34 AM  all   14.29    0.00    9.18    0.00    0.00    0.00    0.00    0.00    0.00   76.53
+11:01:34 AM    0   14.29    0.00    9.18    0.00    0.00    0.00    0.00    0.00    0.00   76.53
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all   31.47    0.00   29.95    0.00    0.00    0.51    0.00    0.00    0.00   38.07
+Average:       0   31.47    0.00   29.95    0.00    0.00    0.51    0.00    0.00    0.00   38.07
+zzz ***Sat Sep 29 11:02:02 CST 2018
+Linux 3.10.0-862.el7.x86_64 (pgha3) 	09/29/2018 	_x86_64_	(1 CPU)
+
+11:02:02 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:02:03 AM  all   11.11    0.00   19.19    1.01    0.00    0.00    0.00    0.00    0.00   68.69
+11:02:03 AM    0   11.11    0.00   19.19    1.01    0.00    0.00    0.00    0.00    0.00   68.69
+
+11:02:03 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:02:04 AM  all    6.25    0.00   13.54    0.00    0.00    1.04    0.00    0.00    0.00   79.17
+11:02:04 AM    0    6.25    0.00   13.54    0.00    0.00    1.04    0.00    0.00    0.00   79.17
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all    8.72    0.00   16.41    0.51    0.00    0.51    0.00    0.00    0.00   73.85
+Average:       0    8.72    0.00   16.41    0.51    0.00    0.51    0.00    0.00    0.00   73.85

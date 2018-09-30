@@ -1,0 +1,18 @@
+zzz ***Sat Sep 29 11:01:32 CST 2018
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   46G  8.6G   38G  19% /
+devtmpfs               1.9G     0  1.9G   0% /dev
+tmpfs                  1.9G   24K  1.9G   1% /dev/shm
+tmpfs                  1.9G   18M  1.9G   1% /run
+tmpfs                  1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/sda1              197M  148M   50M  75% /boot
+tmpfs                  380M     0  380M   0% /run/user/0
+zzz ***Sat Sep 29 11:02:02 CST 2018
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   46G  8.6G   38G  19% /
+devtmpfs               1.9G     0  1.9G   0% /dev
+tmpfs                  1.9G   24K  1.9G   1% /dev/shm
+tmpfs                  1.9G   18M  1.9G   1% /run
+tmpfs                  1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/sda1              197M  148M   50M  75% /boot
+tmpfs                  380M     0  380M   0% /run/user/0

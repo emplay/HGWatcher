@@ -1,0 +1,5 @@
+Linux HGW v1.0.0 pgha3
+SNAP_INTERVAL 30
+CPU_CORES 1
+VCPUS 1
+HGW_ARCHIVE_DEST /HGWatcher/archive

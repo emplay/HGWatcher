@@ -1,0 +1,596 @@
+<style>
+caption{
+         text-align:left;
+     padding-bottom:10px;
+         #background-color:#Cc6;
+         font-size:1.2em;
+         font-weight:bold;
+         color:#326690;
+}
+.tablecss{
+        width:50%;
+        margin:15px 0
+}
+.tablecss th {
+        background-color:#326690;
+        color:#000000
+}
+.tablecss,.tablecss th,.tablecss td
+{
+        font-size:0.95em;
+        text-align:left;
+        padding:4px;
+        border:1px solid #dddddd;
+        border-collapse:collapse
+}
+.tablecss tr:nth-child(odd){
+        background-color:#ccc;
+}
+</style>
+<table border="1" class="tablecss">
+  <caption>Database version</caption>
+  <tr>
+    <th align="center">version</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">PostgreSQL 9.5.14 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9), 64-bit</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The total number of connections</caption>
+  <tr>
+    <th align="center">count_session</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Active session</caption>
+  <tr>
+    <th align="center">count_active_session</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The number of connections in the last hour</caption>
+  <tr>
+    <th align="center">count_connect</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Installed extensions</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">extname</th>
+    <th align="center">extowner</th>
+    <th align="center">extnamespace</th>
+    <th align="center">extrelocatable</th>
+    <th align="center">extversion</th>
+    <th align="center">extconfig</th>
+    <th align="center">extcondition</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">plpgsql</td>
+    <td align="right">10</td>
+    <td align="right">11</td>
+    <td align="left">f</td>
+    <td align="left">1.0</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The data type used in the database</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">typname</th>
+    <th align="center">count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">varchar</td>
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Object created in the database</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">rolname</th>
+    <th align="center">nspname</th>
+    <th align="center">relkind</th>
+    <th align="center">count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">highgo</td>
+    <td align="left">oracle_catalog</td>
+    <td align="left">v</td>
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Custom parameters in the database</caption>
+  <tr>
+    <th align="center">setdatabase</th>
+    <th align="center">setrole</th>
+    <th align="center">setconfig</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The number 2 PC</caption>
+  <tr>
+    <th align="center">count_2pc</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>More than 5 minutes of 2pc</caption>
+  <tr>
+    <th align="center">transaction</th>
+    <th align="center">gid</th>
+    <th align="center">prepared</th>
+    <th align="center">owner</th>
+    <th align="center">database</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Autovacuum state</caption>
+  <tr>
+    <th align="center">current_setting</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">on</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The table that has closed Autovacuum</caption>
+  <tr>
+    <th align="center">relname</th>
+    <th align="center">pg_size_pretty</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>How long ago the garbage can be recycled</caption>
+  <tr>
+    <th align="center">recycled_time</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">00:00:00</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Dead tuples that need to be recycled</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">schemaname</th>
+    <th align="center">relname</th>
+    <th align="center">n_dead_tup</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Large objects that are not referenced</caption>
+  <tr>
+    <th align="center">datname</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The archive information</caption>
+  <tr>
+    <th align="center">now_xlog</th>
+    <th align="center">archived_count</th>
+    <th align="center">last_archived_wal</th>
+    <th align="center">last_archived_time</th>
+    <th align="center">failed_count</th>
+    <th align="center">last_failed_wal</th>
+    <th align="center">last_failed_time</th>
+    <th align="center">stats_reset</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">000000010000000000000001</td>
+    <td align="right">0</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">2018-09-26 10:51:52.584751+08</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The stream the delay information</caption>
+  <tr>
+    <th align="center">sent_delay</th>
+    <th align="center">write_delay</th>
+    <th align="center">flush_delay</th>
+    <th align="center">replay_delay</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SLOT delay;</caption>
+  <tr>
+    <th align="center">slot_name</th>
+    <th align="center">plugin</th>
+    <th align="center">slot_type</th>
+    <th align="center">database</th>
+    <th align="center">active</th>
+    <th align="center">xmin</th>
+    <th align="center">catalog_xmin</th>
+    <th align="center">restart_delay</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>User password expiration time</caption>
+  <tr>
+    <th align="center">rolname</th>
+    <th align="center">rolvaliduntil</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Locks in database</caption>
+  <tr>
+    <th align="center">locktype</th>
+    <th align="center">datname</th>
+    <th align="center">relation</th>
+    <th align="center">page</th>
+    <th align="center">tuple</th>
+    <th align="center">virtualxid</th>
+    <th align="center">transactionid</th>
+    <th align="center">classid</th>
+    <th align="center">objid</th>
+    <th align="center">objsubid</th>
+    <th align="center">lock_conflict</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Lock wait</caption>
+  <tr>
+    <th align="center">locktype</th>
+    <th align="center">r_mode</th>
+    <th align="center">r_user</th>
+    <th align="center">r_db</th>
+    <th align="center">relation</th>
+    <th align="center">r_pid</th>
+    <th align="center">r_xact_start</th>
+    <th align="center">r_query_start</th>
+    <th align="center">r_locktime</th>
+    <th align="center">r_query</th>
+    <th align="center">w_mode</th>
+    <th align="center">w_pid</th>
+    <th align="center">w_xact_start</th>
+    <th align="center">w_query_start</th>
+    <th align="center">w_locktime</th>
+    <th align="center">w_query</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Table expansion check</caption>
+  <tr>
+    <th align="center">db</th>
+    <th align="center">schemaname</th>
+    <th align="center">tablename</th>
+    <th align="center">tups</th>
+    <th align="center">pages</th>
+    <th align="center">otta</th>
+    <th align="center">tbloat</th>
+    <th align="center">wastedpages</th>
+    <th align="center">wastedbytes</th>
+    <th align="center">wastedsize</th>
+    <th align="center">iname</th>
+    <th align="center">itups</th>
+    <th align="center">ipages</th>
+    <th align="center">iotta</th>
+    <th align="center">ibloat</th>
+    <th align="center">wastedipages</th>
+    <th align="center">wastedibytes</th>
+    <th align="center">wastedisize</th>
+    <th align="center">totalwastedbytes</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_class</td>
+    <td align="right">316</td>
+    <td align="right">13</td>
+    <td align="right">9</td>
+    <td align="right">1.4</td>
+    <td align="right">4</td>
+    <td align="right">32768</td>
+    <td align="left">32768 bytes</td>
+    <td align="left">pg_class_relname_nsp_index</td>
+    <td align="right">316</td>
+    <td align="right">5</td>
+    <td align="right">7</td>
+    <td align="right">0.7</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">32768</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_class</td>
+    <td align="right">316</td>
+    <td align="right">13</td>
+    <td align="right">9</td>
+    <td align="right">1.4</td>
+    <td align="right">4</td>
+    <td align="right">32768</td>
+    <td align="left">32768 bytes</td>
+    <td align="left">pg_class_tblspc_relfilenode_index</td>
+    <td align="right">316</td>
+    <td align="right">2</td>
+    <td align="right">7</td>
+    <td align="right">0.3</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">32768</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_class</td>
+    <td align="right">316</td>
+    <td align="right">13</td>
+    <td align="right">9</td>
+    <td align="right">1.4</td>
+    <td align="right">4</td>
+    <td align="right">32768</td>
+    <td align="left">32768 bytes</td>
+    <td align="left">pg_class_oid_index</td>
+    <td align="right">316</td>
+    <td align="right">2</td>
+    <td align="right">7</td>
+    <td align="right">0.3</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">32768</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_description</td>
+    <td align="right">4175</td>
+    <td align="right">38</td>
+    <td align="right">35</td>
+    <td align="right">1.1</td>
+    <td align="right">3</td>
+    <td align="right">24576</td>
+    <td align="left">24576 bytes</td>
+    <td align="left">pg_description_o_c_o_index</td>
+    <td align="right">4175</td>
+    <td align="right">22</td>
+    <td align="right">27</td>
+    <td align="right">0.8</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">24576</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_collation</td>
+    <td align="right">923</td>
+    <td align="right">28</td>
+    <td align="right">27</td>
+    <td align="right">1.0</td>
+    <td align="right">1</td>
+    <td align="right">8192</td>
+    <td align="left">8192 bytes</td>
+    <td align="left">pg_collation_oid_index</td>
+    <td align="right">923</td>
+    <td align="right">5</td>
+    <td align="right">25</td>
+    <td align="right">0.2</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">8192</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Index expansion check</caption>
+  <tr>
+    <th align="center">db</th>
+    <th align="center">schemaname</th>
+    <th align="center">tablename</th>
+    <th align="center">tups</th>
+    <th align="center">pages</th>
+    <th align="center">otta</th>
+    <th align="center">tbloat</th>
+    <th align="center">wastedpages</th>
+    <th align="center">wastedbytes</th>
+    <th align="center">wastedsize</th>
+    <th align="center">iname</th>
+    <th align="center">itups</th>
+    <th align="center">ipages</th>
+    <th align="center">iotta</th>
+    <th align="center">ibloat</th>
+    <th align="center">wastedipages</th>
+    <th align="center">wastedibytes</th>
+    <th align="center">wastedisize</th>
+    <th align="center">totalwastedbytes</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_seclabel</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left">pg_seclabel_object_index</td>
+    <td align="right">0</td>
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_amop_oid_index</td>
+    <td align="right">676</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left"><br />
+?<br />
+</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_opfamily</td>
+    <td align="right">111</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left">pg_opfamily_oid_index</td>
+    <td align="right">111</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_opfamily</td>
+    <td align="right">111</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left">pg_opfamily_am_name_nsp_index</td>
+    <td align="right">111</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">highgo</td>
+    <td align="left">information_schema</td>
+    <td align="left">administrable_role_authorizations</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left"><br />
+?<br />
+</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Pg_stat_statements information</caption>
+  <tr>
+    <th align="center">case</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_stat_statements were not installed.</td>
+  </tr>
+</table>
+

@@ -1,0 +1,2636 @@
+<style>
+caption{
+         text-align:left;
+     padding-bottom:10px;
+         #background-color:#Cc6;
+         font-size:1.2em;
+         font-weight:bold;
+         color:#326690;
+}
+.tablecss{
+        width:50%;
+        margin:15px 0
+}
+.tablecss th {
+        background-color:#326690;
+        color:#000000
+}
+.tablecss,.tablecss th,.tablecss td
+{
+        font-size:0.95em;
+        text-align:left;
+        padding:4px;
+        border:1px solid #dddddd;
+        border-collapse:collapse
+}
+.tablecss tr:nth-child(odd){
+        background-color:#ccc;
+}
+</style>
+<table border="1" class="tablecss">
+  <caption>Database version</caption>
+  <tr>
+    <th align="center">version</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">PostgreSQL 10.5 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-28), 64-bit</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The total number of connections</caption>
+  <tr>
+    <th align="center">count_session</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">8</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Active session</caption>
+  <tr>
+    <th align="center">count_active_session</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">2</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The number of connections in the last hour</caption>
+  <tr>
+    <th align="center">count_connect</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Installed extensions</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">extname</th>
+    <th align="center">extowner</th>
+    <th align="center">extnamespace</th>
+    <th align="center">extrelocatable</th>
+    <th align="center">extversion</th>
+    <th align="center">extconfig</th>
+    <th align="center">extcondition</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">plpgsql</td>
+    <td align="right">10</td>
+    <td align="right">11</td>
+    <td align="left">f</td>
+    <td align="left">1.0</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">pg_stat_statements</td>
+    <td align="right">10</td>
+    <td align="right">2200</td>
+    <td align="left">t</td>
+    <td align="left">1.5</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The data type used in the database</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">typname</th>
+    <th align="center">count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">int4</td>
+    <td align="right">83</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">cid</td>
+    <td align="right">34</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">xid</td>
+    <td align="right">34</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">bpchar</td>
+    <td align="right">24</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">varchar</td>
+    <td align="right">23</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">oid</td>
+    <td align="right">19</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">tid</td>
+    <td align="right">17</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">int8</td>
+    <td align="right">15</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">numeric</td>
+    <td align="right">11</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">float8</td>
+    <td align="right">7</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">timestamp</td>
+    <td align="right">5</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">text</td>
+    <td align="right">3</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">bool</td>
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Object created in the database</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">rolname</th>
+    <th align="center">nspname</th>
+    <th align="center">relkind</th>
+    <th align="center">count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">benchmarksql</td>
+    <td align="left">public</td>
+    <td align="left">i</td>
+    <td align="right">12</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">benchmarksql</td>
+    <td align="left">public</td>
+    <td align="left">r</td>
+    <td align="right">10</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">r</td>
+    <td align="right">6</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">i</td>
+    <td align="right">4</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">benchmarksql</td>
+    <td align="left">public</td>
+    <td align="left">S</td>
+    <td align="right">1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">v</td>
+    <td align="right">1</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The size of the object in the database</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">this_buk_no</th>
+    <th align="center">rels_in_this_buk</th>
+    <th align="center">buk_min</th>
+    <th align="center">buk_max</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">1</td>
+    <td align="right">27</td>
+    <td align="left">0 bytes</td>
+    <td align="left">2680 kB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">3</td>
+    <td align="right">2</td>
+    <td align="left">10192 kB</td>
+    <td align="left">10 MB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">5</td>
+    <td align="right">1</td>
+    <td align="left">16 MB</td>
+    <td align="left">16 MB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">6</td>
+    <td align="right">1</td>
+    <td align="left">19 MB</td>
+    <td align="left">19 MB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">8</td>
+    <td align="right">1</td>
+    <td align="left">26 MB</td>
+    <td align="left">26 MB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">9</td>
+    <td align="right">1</td>
+    <td align="left">30 MB</td>
+    <td align="left">30 MB</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">11</td>
+    <td align="right">1</td>
+    <td align="left">35 MB</td>
+    <td align="left">35 MB</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Custom parameters in the database</caption>
+  <tr>
+    <th align="center">setdatabase</th>
+    <th align="center">setrole</th>
+    <th align="center">setconfig</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>QPS(Query per second)</caption>
+  <tr>
+    <th align="center">qps</th>
+    <th align="center">qps_read</th>
+    <th align="center">qps_write</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">33</td>
+    <td align="right">30</td>
+    <td align="right">3</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Number of rows processed within the last 1 hour, including insert, select, update, delete.</caption>
+  <tr>
+    <th align="center">sum</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">97</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Share buffer information</caption>
+  <tr>
+    <th align="center">shared_blks_hit</th>
+    <th align="center">shared_blks_read</th>
+    <th align="center">shared_blks_dirtied</th>
+    <th align="center">shared_blks_written</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">25</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">14</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">27</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1995</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">6</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">79</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">424</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Process buffer</caption>
+  <tr>
+    <th align="center">local_blks_hit</th>
+    <th align="center">local_blks_read</th>
+    <th align="center">local_blks_dirtied</th>
+    <th align="center">local_blks_written</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Temporary file statistics</caption>
+  <tr>
+    <th align="center">temp_blks_read</th>
+    <th align="center">temp_blks_written</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Total time the statement spent reading/writing blocks, in milliseconds (if track_io_timing is enabled, otherwise zero)</caption>
+  <tr>
+    <th align="center">blk_read_time</th>
+    <th align="center">blk_write_time</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Long query</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">query_start</th>
+    <th align="center">backend_type</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>long transaction</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">xact_start</th>
+    <th align="center">backend_type</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>idle in transaction</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">xact_start</th>
+    <th align="center">backend_type</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>long idle in transaction</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">xact_start</th>
+    <th align="center">backend_type</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+    <th align="center">state_change</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>waiting</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+    <th align="center">state</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">AutoVacuumMain</td>
+    <td align="left">Activity</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">postgres</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">LogicalLauncherMain</td>
+    <td align="left">Activity</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">postgres</td>
+    <td align="left">Patroni</td>
+    <td align="left">127.0.0.1</td>
+    <td align="left">ClientRead</td>
+    <td align="left">Client</td>
+    <td align="left">idle</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">rep</td>
+    <td align="left">hgha104</td>
+    <td align="left">192.168.80.104</td>
+    <td align="left">WalSenderMain</td>
+    <td align="left">Activity</td>
+    <td align="left">active</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">BgWriterHibernate</td>
+    <td align="left">Activity</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">CheckpointerMain</td>
+    <td align="left">Activity</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">WalWriterMain</td>
+    <td align="left">Activity</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>long waiting</caption>
+  <tr>
+    <th align="center">datname</th>
+    <th align="center">usename</th>
+    <th align="center">application_name</th>
+    <th align="center">client_addr</th>
+    <th align="center">wait_event</th>
+    <th align="center">wait_event_type</th>
+    <th align="center">state</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+    <td align="left">rep</td>
+    <td align="left">hgha104</td>
+    <td align="left">192.168.80.104</td>
+    <td align="left">WalSenderMain</td>
+    <td align="left">Activity</td>
+    <td align="left">active</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The number 2 PC</caption>
+  <tr>
+    <th align="center">count_2pc</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>More than 5 minutes of 2pc</caption>
+  <tr>
+    <th align="center">transaction</th>
+    <th align="center">gid</th>
+    <th align="center">prepared</th>
+    <th align="center">owner</th>
+    <th align="center">database</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Autovacuum state</caption>
+  <tr>
+    <th align="center">current_setting</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">on</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The table that has closed Autovacuum</caption>
+  <tr>
+    <th align="center">relname</th>
+    <th align="center">pg_size_pretty</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>How long ago the garbage can be recycled</caption>
+  <tr>
+    <th align="center">recycled_time</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">00:00:00</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by User I/O Wait Time</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select count(*) count_2pc from pg_prepared_xacts</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null and now()-state_change &gt; interval $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select datname from pg_database where datname not in ($1, $2)</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">with a as <br />
+(select min(xact_start) m from pg_stat_activity where backend_xid is not null or backend_xmin is not null), b as (select min(prepared) m from pg_prepared_xacts) <br />
+select now()-least(a.m,b.m) recycled_time from a,b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select sum(pg_stat_statements.rows) from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select local_blks_hit,local_blks_read,local_blks_dirtied,local_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select temp_blks_read,temp_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_setting($1)</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by Elapsed Time</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">with<br />
+a as (select sum(calls) s, sum(case when ltrim(query,$1) ~* $2 then calls else $3 end) q from pg_stat_statements),<br />
+b as (select sum(calls) s, sum(case when ltrim(query,$4) ~* $5 then calls else $6 end) q from pg_stat_statements , pg_sleep($7))<br />
+select<br />
+b.s-a.s as QPS,<br />
+b.q-a.q as QPS_read,<br />
+b.s-b.q-a.s+a.q  as QPS_write<br />
+from a,b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">SELECT    <br />
+  current_database() AS db, schemaname, tablename, reltuples::bigint AS tups, relpages::bigint AS pages, otta,    <br />
+  ROUND(CASE WHEN otta=$1 OR sml.relpages=$2 OR sml.relpages=otta THEN $3 ELSE sml.relpages/otta::numeric END,$4) AS tbloat,    <br />
+  CASE WHEN relpages &lt; otta THEN $5 ELSE relpages::bigint - otta END AS wastedpages,    <br />
+  CASE WHEN relpages &lt; otta THEN $6 ELSE bs*(sml.relpages-otta)::bigint END AS wastedbytes,    <br />
+  CASE WHEN relpages &lt; otta THEN $7::text ELSE (bs*(relpages-otta))::bigint || $8 END AS wastedsize,    <br />
+  iname, ituples::bigint AS itups, ipages::bigint AS ipages, iotta,    <br />
+  ROUND(CASE WHEN iotta=$9 OR ipages=$10 OR ipages=iotta THEN $11 ELSE ipages/iotta::numeric END,$12) AS ibloat,    <br />
+  CASE WHEN ipages &lt; iotta THEN $13 ELSE ipages::bigint - iotta END AS wastedipages,    <br />
+  CASE WHEN ipages &lt; iotta THEN $14 ELSE bs*(ipages-iotta) END AS wastedibytes,    <br />
+  CASE WHEN ipages &lt; iotta THEN $15 ELSE (bs*(ipages-iotta))::bigint || $16 END AS wastedisize,    <br />
+  CASE WHEN relpages &lt; otta THEN    <br />
+    CASE WHEN ipages &lt; iotta THEN $17 ELSE bs*(ipages-iotta::bigint) END    <br />
+    ELSE CASE WHEN ipages &lt; iotta THEN bs*(relpages-otta::bigint)    <br />
+      ELSE bs*(relpages-otta::bigint + ipages-iotta::bigint) END    <br />
+  END AS totalwastedbytes    <br />
+FROM (    <br />
+  SELECT    <br />
+    nn.nspname AS schemaname,    <br />
+    cc.relname AS tablename,    <br />
+    COALESCE(cc.reltuples,$18) AS reltuples,    <br />
+    COALESCE(cc.relpages,$19) AS relpages,    <br />
+    COALESCE(bs,$20) AS bs,    <br />
+    COALESCE(CEIL((cc.reltuples*((datahdr+ma-    <br />
+      (CASE WHEN datahdr%ma=$21 THEN ma ELSE datahdr%ma END))+nullhdr2+$22))/(bs-$23::float)),$24) AS otta,    <br />
+    COALESCE(c2.relname,$25) AS iname, COALESCE(c2.reltuples,$26) AS ituples, COALESCE(c2.relpages,$27) AS ipages,    <br />
+    COALESCE(CEIL((c2.reltuples*(datahdr-$28))/(bs-$29::float)),$30) AS iotta <br />
+  FROM    <br />
+     pg_class cc    <br />
+  JOIN pg_namespace nn ON cc.relnamespace = nn.oid AND nn.nspname &lt;&gt; $31    <br />
+  LEFT JOIN    <br />
+  (    <br />
+    SELECT    <br />
+      ma,bs,foo.nspname,foo.relname,    <br />
+      (datawidth+(hdr+ma-(case when hdr%ma=$32 THEN ma ELSE hdr%ma END)))::numeric AS datahdr,    <br />
+      (maxfracsum*(nullhdr+ma-(case when nullhdr%ma=$33 THEN ma ELSE nullhdr%ma END))) AS nullhdr2    <br />
+    FROM (    <br />
+      SELECT    <br />
+        ns.nspname, tbl.relname, hdr, ma, bs,    <br />
+        SUM(($34-coalesce(null_frac,$35))*coalesce(avg_width, $36)) AS datawidth,    <br />
+        MAX(coalesce(null_frac,$37)) AS maxfracsum,    <br />
+        hdr+(    <br />
+          SELECT $38+count(*)/$39    <br />
+          FROM pg_stats s2    <br />
+          WHERE null_frac&lt;&gt;$40 AND s2.schemaname = ns.nspname AND s2.tablename = tbl.relname    <br />
+        ) AS nullhdr    <br />
+      FROM pg_attribute att     <br />
+      JOIN pg_class tbl ON att.attrelid = tbl.oid    <br />
+      JOIN pg_namespace ns ON ns.oid = tbl.relnamespace     <br />
+      LEFT JOIN pg_stats s ON s.schemaname=ns.nspname    <br />
+      AND s.tablename = tbl.relname    <br />
+      AND s.inherited=$41    <br />
+      AND s.attname=att.attname,    <br />
+      (    <br />
+        SELECT    <br />
+          (SELECT current_setting($42)::numeric) AS bs,    <br />
+            CASE WHEN SUBSTRING(SPLIT_PART(v, $43, $44) FROM $45 for $46)    <br />
+              IN ($47,$48,$49) THEN $50 ELSE $51 END AS hdr,    <br />
+          CASE WHEN v ~ $52 OR v ~ $53 THEN $54 ELSE $55 END AS ma    <br />
+        FROM (SELECT version() AS v) AS foo    <br />
+      ) AS constants    <br />
+      WHERE att.attnum &gt; $56 AND tbl.relkind=$57    <br />
+      GROUP BY 1,2,3,4,5    <br />
+    ) AS foo    <br />
+  ) AS rs    <br />
+  ON cc.relname = rs.relname AND nn.nspname = rs.nspname    <br />
+  LEFT JOIN pg_index i ON indrelid = cc.oid    <br />
+  LEFT JOIN pg_class c2 ON c2.oid = i.indexrelid    <br />
+) AS sml order by wastedbytes desc limit $58</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),schemaname,relname,n_dead_tup from pg_stat_all_tables <br />
+where n_live_tup&gt;$1 and n_dead_tup/n_live_tup&gt;$2 and schemaname not in ($3,$4) order by n_dead_tup desc limit $5</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),buk this_buk_no,cnt rels_in_this_buk,pg_size_pretty(min) buk_min,pg_size_pretty(max) buk_max <br />
+from( select row_number() over (partition by buk order by tsize),tsize,buk,min(tsize) over (partition by buk),max(tsize) over (partition by buk),count(*) over (partition by buk) cnt <br />
+from ( select pg_relation_size(a.oid) tsize, width_bucket(pg_relation_size(a.oid),tmin,tmax,$1) buk <br />
+from (select min(pg_relation_size(a.oid)) tmin,max(pg_relation_size(a.oid)) tmax <br />
+from pg_class a,pg_namespace c where a.relnamespace=c.oid and nspname !~ $2 and nspname&lt;&gt;$3) t, pg_class a,pg_namespace c <br />
+where a.relnamespace=c.oid and nspname !~ $4 and nspname&lt;&gt;$5 ) t)t where row_number=$6</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select blk_read_time,blk_write_time from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select local_blks_hit,local_blks_read,local_blks_dirtied,local_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select shared_blks_hit,shared_blks_read,shared_blks_dirtied,shared_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select temp_blks_read,temp_blks_written from pg_stat_statements</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by total Elapsed Time</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">with<br />
+a as (select sum(calls) s, sum(case when ltrim(query,$1) ~* $2 then calls else $3 end) q from pg_stat_statements),<br />
+b as (select sum(calls) s, sum(case when ltrim(query,$4) ~* $5 then calls else $6 end) q from pg_stat_statements , pg_sleep($7))<br />
+select<br />
+b.s-a.s as QPS,<br />
+b.q-a.q as QPS_read,<br />
+b.s-b.q-a.s+a.q  as QPS_write<br />
+from a,b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">SELECT    <br />
+  current_database() AS db, schemaname, tablename, reltuples::bigint AS tups, relpages::bigint AS pages, otta,    <br />
+  ROUND(CASE WHEN otta=$1 OR sml.relpages=$2 OR sml.relpages=otta THEN $3 ELSE sml.relpages/otta::numeric END,$4) AS tbloat,    <br />
+  CASE WHEN relpages &lt; otta THEN $5 ELSE relpages::bigint - otta END AS wastedpages,    <br />
+  CASE WHEN relpages &lt; otta THEN $6 ELSE bs*(sml.relpages-otta)::bigint END AS wastedbytes,    <br />
+  CASE WHEN relpages &lt; otta THEN $7::text ELSE (bs*(relpages-otta))::bigint || $8 END AS wastedsize,    <br />
+  iname, ituples::bigint AS itups, ipages::bigint AS ipages, iotta,    <br />
+  ROUND(CASE WHEN iotta=$9 OR ipages=$10 OR ipages=iotta THEN $11 ELSE ipages/iotta::numeric END,$12) AS ibloat,    <br />
+  CASE WHEN ipages &lt; iotta THEN $13 ELSE ipages::bigint - iotta END AS wastedipages,    <br />
+  CASE WHEN ipages &lt; iotta THEN $14 ELSE bs*(ipages-iotta) END AS wastedibytes,    <br />
+  CASE WHEN ipages &lt; iotta THEN $15 ELSE (bs*(ipages-iotta))::bigint || $16 END AS wastedisize,    <br />
+  CASE WHEN relpages &lt; otta THEN    <br />
+    CASE WHEN ipages &lt; iotta THEN $17 ELSE bs*(ipages-iotta::bigint) END    <br />
+    ELSE CASE WHEN ipages &lt; iotta THEN bs*(relpages-otta::bigint)    <br />
+      ELSE bs*(relpages-otta::bigint + ipages-iotta::bigint) END    <br />
+  END AS totalwastedbytes    <br />
+FROM (    <br />
+  SELECT    <br />
+    nn.nspname AS schemaname,    <br />
+    cc.relname AS tablename,    <br />
+    COALESCE(cc.reltuples,$18) AS reltuples,    <br />
+    COALESCE(cc.relpages,$19) AS relpages,    <br />
+    COALESCE(bs,$20) AS bs,    <br />
+    COALESCE(CEIL((cc.reltuples*((datahdr+ma-    <br />
+      (CASE WHEN datahdr%ma=$21 THEN ma ELSE datahdr%ma END))+nullhdr2+$22))/(bs-$23::float)),$24) AS otta,    <br />
+    COALESCE(c2.relname,$25) AS iname, COALESCE(c2.reltuples,$26) AS ituples, COALESCE(c2.relpages,$27) AS ipages,    <br />
+    COALESCE(CEIL((c2.reltuples*(datahdr-$28))/(bs-$29::float)),$30) AS iotta <br />
+  FROM    <br />
+     pg_class cc    <br />
+  JOIN pg_namespace nn ON cc.relnamespace = nn.oid AND nn.nspname &lt;&gt; $31    <br />
+  LEFT JOIN    <br />
+  (    <br />
+    SELECT    <br />
+      ma,bs,foo.nspname,foo.relname,    <br />
+      (datawidth+(hdr+ma-(case when hdr%ma=$32 THEN ma ELSE hdr%ma END)))::numeric AS datahdr,    <br />
+      (maxfracsum*(nullhdr+ma-(case when nullhdr%ma=$33 THEN ma ELSE nullhdr%ma END))) AS nullhdr2    <br />
+    FROM (    <br />
+      SELECT    <br />
+        ns.nspname, tbl.relname, hdr, ma, bs,    <br />
+        SUM(($34-coalesce(null_frac,$35))*coalesce(avg_width, $36)) AS datawidth,    <br />
+        MAX(coalesce(null_frac,$37)) AS maxfracsum,    <br />
+        hdr+(    <br />
+          SELECT $38+count(*)/$39    <br />
+          FROM pg_stats s2    <br />
+          WHERE null_frac&lt;&gt;$40 AND s2.schemaname = ns.nspname AND s2.tablename = tbl.relname    <br />
+        ) AS nullhdr    <br />
+      FROM pg_attribute att     <br />
+      JOIN pg_class tbl ON att.attrelid = tbl.oid    <br />
+      JOIN pg_namespace ns ON ns.oid = tbl.relnamespace     <br />
+      LEFT JOIN pg_stats s ON s.schemaname=ns.nspname    <br />
+      AND s.tablename = tbl.relname    <br />
+      AND s.inherited=$41    <br />
+      AND s.attname=att.attname,    <br />
+      (    <br />
+        SELECT    <br />
+          (SELECT current_setting($42)::numeric) AS bs,    <br />
+            CASE WHEN SUBSTRING(SPLIT_PART(v, $43, $44) FROM $45 for $46)    <br />
+              IN ($47,$48,$49) THEN $50 ELSE $51 END AS hdr,    <br />
+          CASE WHEN v ~ $52 OR v ~ $53 THEN $54 ELSE $55 END AS ma    <br />
+        FROM (SELECT version() AS v) AS foo    <br />
+      ) AS constants    <br />
+      WHERE att.attnum &gt; $56 AND tbl.relkind=$57    <br />
+      GROUP BY 1,2,3,4,5    <br />
+    ) AS foo    <br />
+  ) AS rs    <br />
+  ON cc.relname = rs.relname AND nn.nspname = rs.nspname    <br />
+  LEFT JOIN pg_index i ON indrelid = cc.oid    <br />
+  LEFT JOIN pg_class c2 ON c2.oid = i.indexrelid    <br />
+) AS sml order by wastedbytes desc limit $58</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),schemaname,relname,n_dead_tup from pg_stat_all_tables <br />
+where n_live_tup&gt;$1 and n_dead_tup/n_live_tup&gt;$2 and schemaname not in ($3,$4) order by n_dead_tup desc limit $5</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),buk this_buk_no,cnt rels_in_this_buk,pg_size_pretty(min) buk_min,pg_size_pretty(max) buk_max <br />
+from( select row_number() over (partition by buk order by tsize),tsize,buk,min(tsize) over (partition by buk),max(tsize) over (partition by buk),count(*) over (partition by buk) cnt <br />
+from ( select pg_relation_size(a.oid) tsize, width_bucket(pg_relation_size(a.oid),tmin,tmax,$1) buk <br />
+from (select min(pg_relation_size(a.oid)) tmin,max(pg_relation_size(a.oid)) tmax <br />
+from pg_class a,pg_namespace c where a.relnamespace=c.oid and nspname !~ $2 and nspname&lt;&gt;$3) t, pg_class a,pg_namespace c <br />
+where a.relnamespace=c.oid and nspname !~ $4 and nspname&lt;&gt;$5 ) t)t where row_number=$6</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">SELECT CASE WHEN pg_is_in_recovery() THEN $1 ELSE ($2 || SUBSTR(pg_walfile_name(pg_current_wal_lsn()), $3, $4))::bit(32)::int END, CASE WHEN pg_is_in_recovery() THEN GREATEST( pg_wal_lsn_diff(COALESCE(pg_last_wal_receive_lsn(), $5), $6)::bigint, pg_wal_lsn_diff(pg_last_wal_replay_lsn(), $7)::bigint)ELSE pg_wal_lsn_diff(pg_current_wal_lsn(), $8)::bigint END</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select blk_read_time,blk_write_time from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select local_blks_hit,local_blks_read,local_blks_dirtied,local_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select shared_blks_hit,shared_blks_read,shared_blks_dirtied,shared_blks_written from pg_stat_statements</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by standard deviation</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">SELECT    <br />
+  current_database() AS db, schemaname, tablename, reltuples::bigint AS tups, relpages::bigint AS pages, otta,    <br />
+  ROUND(CASE WHEN otta=$1 OR sml.relpages=$2 OR sml.relpages=otta THEN $3 ELSE sml.relpages/otta::numeric END,$4) AS tbloat,    <br />
+  CASE WHEN relpages &lt; otta THEN $5 ELSE relpages::bigint - otta END AS wastedpages,    <br />
+  CASE WHEN relpages &lt; otta THEN $6 ELSE bs*(sml.relpages-otta)::bigint END AS wastedbytes,    <br />
+  CASE WHEN relpages &lt; otta THEN $7::text ELSE (bs*(relpages-otta))::bigint || $8 END AS wastedsize,    <br />
+  iname, ituples::bigint AS itups, ipages::bigint AS ipages, iotta,    <br />
+  ROUND(CASE WHEN iotta=$9 OR ipages=$10 OR ipages=iotta THEN $11 ELSE ipages/iotta::numeric END,$12) AS ibloat,    <br />
+  CASE WHEN ipages &lt; iotta THEN $13 ELSE ipages::bigint - iotta END AS wastedipages,    <br />
+  CASE WHEN ipages &lt; iotta THEN $14 ELSE bs*(ipages-iotta) END AS wastedibytes,    <br />
+  CASE WHEN ipages &lt; iotta THEN $15 ELSE (bs*(ipages-iotta))::bigint || $16 END AS wastedisize,    <br />
+  CASE WHEN relpages &lt; otta THEN    <br />
+    CASE WHEN ipages &lt; iotta THEN $17 ELSE bs*(ipages-iotta::bigint) END    <br />
+    ELSE CASE WHEN ipages &lt; iotta THEN bs*(relpages-otta::bigint)    <br />
+      ELSE bs*(relpages-otta::bigint + ipages-iotta::bigint) END    <br />
+  END AS totalwastedbytes    <br />
+FROM (    <br />
+  SELECT    <br />
+    nn.nspname AS schemaname,    <br />
+    cc.relname AS tablename,    <br />
+    COALESCE(cc.reltuples,$18) AS reltuples,    <br />
+    COALESCE(cc.relpages,$19) AS relpages,    <br />
+    COALESCE(bs,$20) AS bs,    <br />
+    COALESCE(CEIL((cc.reltuples*((datahdr+ma-    <br />
+      (CASE WHEN datahdr%ma=$21 THEN ma ELSE datahdr%ma END))+nullhdr2+$22))/(bs-$23::float)),$24) AS otta,    <br />
+    COALESCE(c2.relname,$25) AS iname, COALESCE(c2.reltuples,$26) AS ituples, COALESCE(c2.relpages,$27) AS ipages,    <br />
+    COALESCE(CEIL((c2.reltuples*(datahdr-$28))/(bs-$29::float)),$30) AS iotta <br />
+  FROM    <br />
+     pg_class cc    <br />
+  JOIN pg_namespace nn ON cc.relnamespace = nn.oid AND nn.nspname &lt;&gt; $31    <br />
+  LEFT JOIN    <br />
+  (    <br />
+    SELECT    <br />
+      ma,bs,foo.nspname,foo.relname,    <br />
+      (datawidth+(hdr+ma-(case when hdr%ma=$32 THEN ma ELSE hdr%ma END)))::numeric AS datahdr,    <br />
+      (maxfracsum*(nullhdr+ma-(case when nullhdr%ma=$33 THEN ma ELSE nullhdr%ma END))) AS nullhdr2    <br />
+    FROM (    <br />
+      SELECT    <br />
+        ns.nspname, tbl.relname, hdr, ma, bs,    <br />
+        SUM(($34-coalesce(null_frac,$35))*coalesce(avg_width, $36)) AS datawidth,    <br />
+        MAX(coalesce(null_frac,$37)) AS maxfracsum,    <br />
+        hdr+(    <br />
+          SELECT $38+count(*)/$39    <br />
+          FROM pg_stats s2    <br />
+          WHERE null_frac&lt;&gt;$40 AND s2.schemaname = ns.nspname AND s2.tablename = tbl.relname    <br />
+        ) AS nullhdr    <br />
+      FROM pg_attribute att     <br />
+      JOIN pg_class tbl ON att.attrelid = tbl.oid    <br />
+      JOIN pg_namespace ns ON ns.oid = tbl.relnamespace     <br />
+      LEFT JOIN pg_stats s ON s.schemaname=ns.nspname    <br />
+      AND s.tablename = tbl.relname    <br />
+      AND s.inherited=$41    <br />
+      AND s.attname=att.attname,    <br />
+      (    <br />
+        SELECT    <br />
+          (SELECT current_setting($42)::numeric) AS bs,    <br />
+            CASE WHEN SUBSTRING(SPLIT_PART(v, $43, $44) FROM $45 for $46)    <br />
+              IN ($47,$48,$49) THEN $50 ELSE $51 END AS hdr,    <br />
+          CASE WHEN v ~ $52 OR v ~ $53 THEN $54 ELSE $55 END AS ma    <br />
+        FROM (SELECT version() AS v) AS foo    <br />
+      ) AS constants    <br />
+      WHERE att.attnum &gt; $56 AND tbl.relkind=$57    <br />
+      GROUP BY 1,2,3,4,5    <br />
+    ) AS foo    <br />
+  ) AS rs    <br />
+  ON cc.relname = rs.relname AND nn.nspname = rs.nspname    <br />
+  LEFT JOIN pg_index i ON indrelid = cc.oid    <br />
+  LEFT JOIN pg_class c2 ON c2.oid = i.indexrelid    <br />
+) AS sml order by wastedbytes desc limit $58</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">SELECT version()</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">SELECT CASE WHEN pg_is_in_recovery() THEN $1 ELSE ($2 || SUBSTR(pg_walfile_name(pg_current_wal_lsn()), $3, $4))::bit(32)::int END, CASE WHEN pg_is_in_recovery() THEN GREATEST( pg_wal_lsn_diff(COALESCE(pg_last_wal_receive_lsn(), $5), $6)::bigint, pg_wal_lsn_diff(pg_last_wal_replay_lsn(), $7)::bigint)ELSE pg_wal_lsn_diff(pg_current_wal_lsn(), $8)::bigint END</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">SELECT version()</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select sum(pg_stat_statements.rows) from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null and now()-state_change &gt; interval $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_setting($1)</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">with a as <br />
+(select min(xact_start) m from pg_stat_activity where backend_xid is not null or backend_xmin is not null), b as (select min(prepared) m from pg_prepared_xacts) <br />
+select now()-least(a.m,b.m) recycled_time from a,b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select temp_blks_read,temp_blks_written from pg_stat_statements</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by Sharable Memory</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">SELECT    <br />
+  current_database() AS db, schemaname, tablename, reltuples::bigint AS tups, relpages::bigint AS pages, otta,    <br />
+  ROUND(CASE WHEN otta=$1 OR sml.relpages=$2 OR sml.relpages=otta THEN $3 ELSE sml.relpages/otta::numeric END,$4) AS tbloat,    <br />
+  CASE WHEN relpages &lt; otta THEN $5 ELSE relpages::bigint - otta END AS wastedpages,    <br />
+  CASE WHEN relpages &lt; otta THEN $6 ELSE bs*(sml.relpages-otta)::bigint END AS wastedbytes,    <br />
+  CASE WHEN relpages &lt; otta THEN $7::text ELSE (bs*(relpages-otta))::bigint || $8 END AS wastedsize,    <br />
+  iname, ituples::bigint AS itups, ipages::bigint AS ipages, iotta,    <br />
+  ROUND(CASE WHEN iotta=$9 OR ipages=$10 OR ipages=iotta THEN $11 ELSE ipages/iotta::numeric END,$12) AS ibloat,    <br />
+  CASE WHEN ipages &lt; iotta THEN $13 ELSE ipages::bigint - iotta END AS wastedipages,    <br />
+  CASE WHEN ipages &lt; iotta THEN $14 ELSE bs*(ipages-iotta) END AS wastedibytes,    <br />
+  CASE WHEN ipages &lt; iotta THEN $15 ELSE (bs*(ipages-iotta))::bigint || $16 END AS wastedisize,    <br />
+  CASE WHEN relpages &lt; otta THEN    <br />
+    CASE WHEN ipages &lt; iotta THEN $17 ELSE bs*(ipages-iotta::bigint) END    <br />
+    ELSE CASE WHEN ipages &lt; iotta THEN bs*(relpages-otta::bigint)    <br />
+      ELSE bs*(relpages-otta::bigint + ipages-iotta::bigint) END    <br />
+  END AS totalwastedbytes    <br />
+FROM (    <br />
+  SELECT    <br />
+    nn.nspname AS schemaname,    <br />
+    cc.relname AS tablename,    <br />
+    COALESCE(cc.reltuples,$18) AS reltuples,    <br />
+    COALESCE(cc.relpages,$19) AS relpages,    <br />
+    COALESCE(bs,$20) AS bs,    <br />
+    COALESCE(CEIL((cc.reltuples*((datahdr+ma-    <br />
+      (CASE WHEN datahdr%ma=$21 THEN ma ELSE datahdr%ma END))+nullhdr2+$22))/(bs-$23::float)),$24) AS otta,    <br />
+    COALESCE(c2.relname,$25) AS iname, COALESCE(c2.reltuples,$26) AS ituples, COALESCE(c2.relpages,$27) AS ipages,    <br />
+    COALESCE(CEIL((c2.reltuples*(datahdr-$28))/(bs-$29::float)),$30) AS iotta <br />
+  FROM    <br />
+     pg_class cc    <br />
+  JOIN pg_namespace nn ON cc.relnamespace = nn.oid AND nn.nspname &lt;&gt; $31    <br />
+  LEFT JOIN    <br />
+  (    <br />
+    SELECT    <br />
+      ma,bs,foo.nspname,foo.relname,    <br />
+      (datawidth+(hdr+ma-(case when hdr%ma=$32 THEN ma ELSE hdr%ma END)))::numeric AS datahdr,    <br />
+      (maxfracsum*(nullhdr+ma-(case when nullhdr%ma=$33 THEN ma ELSE nullhdr%ma END))) AS nullhdr2    <br />
+    FROM (    <br />
+      SELECT    <br />
+        ns.nspname, tbl.relname, hdr, ma, bs,    <br />
+        SUM(($34-coalesce(null_frac,$35))*coalesce(avg_width, $36)) AS datawidth,    <br />
+        MAX(coalesce(null_frac,$37)) AS maxfracsum,    <br />
+        hdr+(    <br />
+          SELECT $38+count(*)/$39    <br />
+          FROM pg_stats s2    <br />
+          WHERE null_frac&lt;&gt;$40 AND s2.schemaname = ns.nspname AND s2.tablename = tbl.relname    <br />
+        ) AS nullhdr    <br />
+      FROM pg_attribute att     <br />
+      JOIN pg_class tbl ON att.attrelid = tbl.oid    <br />
+      JOIN pg_namespace ns ON ns.oid = tbl.relnamespace     <br />
+      LEFT JOIN pg_stats s ON s.schemaname=ns.nspname    <br />
+      AND s.tablename = tbl.relname    <br />
+      AND s.inherited=$41    <br />
+      AND s.attname=att.attname,    <br />
+      (    <br />
+        SELECT    <br />
+          (SELECT current_setting($42)::numeric) AS bs,    <br />
+            CASE WHEN SUBSTRING(SPLIT_PART(v, $43, $44) FROM $45 for $46)    <br />
+              IN ($47,$48,$49) THEN $50 ELSE $51 END AS hdr,    <br />
+          CASE WHEN v ~ $52 OR v ~ $53 THEN $54 ELSE $55 END AS ma    <br />
+        FROM (SELECT version() AS v) AS foo    <br />
+      ) AS constants    <br />
+      WHERE att.attnum &gt; $56 AND tbl.relkind=$57    <br />
+      GROUP BY 1,2,3,4,5    <br />
+    ) AS foo    <br />
+  ) AS rs    <br />
+  ON cc.relname = rs.relname AND nn.nspname = rs.nspname    <br />
+  LEFT JOIN pg_index i ON indrelid = cc.oid    <br />
+  LEFT JOIN pg_class c2 ON c2.oid = i.indexrelid    <br />
+) AS sml order by wastedbytes desc limit $58</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),buk this_buk_no,cnt rels_in_this_buk,pg_size_pretty(min) buk_min,pg_size_pretty(max) buk_max <br />
+from( select row_number() over (partition by buk order by tsize),tsize,buk,min(tsize) over (partition by buk),max(tsize) over (partition by buk),count(*) over (partition by buk) cnt <br />
+from ( select pg_relation_size(a.oid) tsize, width_bucket(pg_relation_size(a.oid),tmin,tmax,$1) buk <br />
+from (select min(pg_relation_size(a.oid)) tmin,max(pg_relation_size(a.oid)) tmax <br />
+from pg_class a,pg_namespace c where a.relnamespace=c.oid and nspname !~ $2 and nspname&lt;&gt;$3) t, pg_class a,pg_namespace c <br />
+where a.relnamespace=c.oid and nspname !~ $4 and nspname&lt;&gt;$5 ) t)t where row_number=$6</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),buk this_buk_no,cnt rels_in_this_buk,pg_size_pretty(min) buk_min,pg_size_pretty(max) buk_max <br />
+from( select row_number() over (partition by buk order by tsize),tsize,buk,min(tsize) over (partition by buk),max(tsize) over (partition by buk),count(*) over (partition by buk) cnt <br />
+from ( select pg_relation_size(a.oid) tsize, width_bucket(pg_relation_size(a.oid),tmin,tmax,$1) buk <br />
+from (select min(pg_relation_size(a.oid)) tmin,max(pg_relation_size(a.oid)) tmax <br />
+from pg_class a,pg_namespace c where a.relnamespace=c.oid and nspname !~ $2 and nspname&lt;&gt;$3) t, pg_class a,pg_namespace c <br />
+where a.relnamespace=c.oid and nspname !~ $4 and nspname&lt;&gt;$5 ) t)t where row_number=$6</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),schemaname,relname,n_dead_tup from pg_stat_all_tables <br />
+where n_live_tup&gt;$1 and n_dead_tup/n_live_tup&gt;$2 and schemaname not in ($3,$4) order by n_dead_tup desc limit $5</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select relname, pg_size_pretty(pg_total_relation_size(oid)) from pg_class where reloptions @&gt; array[$1]</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select relname, pg_size_pretty(pg_total_relation_size(oid)) from pg_class where reloptions @&gt; array[$1]</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select current_database(),rolname,nspname,relkind,count(*) from pg_class a,pg_authid b,pg_namespace c <br />
+where a.relnamespace=c.oid and a.relowner=b.oid and nspname !~ $1 and nspname&lt;&gt;$2 group by 1,2,3,4 order by 5 desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),rolname,nspname,relkind,count(*) from pg_class a,pg_authid b,pg_namespace c <br />
+where a.relnamespace=c.oid and a.relowner=b.oid and nspname !~ $1 and nspname&lt;&gt;$2 group by 1,2,3,4 order by 5 desc</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SQL ordered by Temporary tablespace</caption>
+  <tr>
+    <th align="center">userid</th>
+    <th align="center">dbid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select count(*) count_2pc from pg_prepared_xacts</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null and now()-state_change &gt; interval $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select datname from pg_database where datname not in ($1, $2)</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">with a as <br />
+(select min(xact_start) m from pg_stat_activity where backend_xid is not null or backend_xmin is not null), b as (select min(prepared) m from pg_prepared_xacts) <br />
+select now()-least(a.m,b.m) recycled_time from a,b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select userid::regrole, dbid, query from pg_stat_statements order by (shared_blks_hit+shared_blks_dirtied) desc limit $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select sum(pg_stat_statements.rows) from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select datname,usename,application_name,client_addr,wait_event,wait_event_type,state from pg_stat_activity where wait_event_type is not null</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select local_blks_hit,local_blks_read,local_blks_dirtied,local_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">13806</td>
+    <td align="left">select temp_blks_read,temp_blks_written from pg_stat_statements</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="right">16425</td>
+    <td align="left">select current_database(),b.typname,count(*) from pg_attribute a,pg_type b where a.atttypid=b.oid and a.attrelid in (select oid from pg_class <br />
+where relnamespace not in (select oid from pg_namespace where nspname ~ $1 or nspname=$2)) group by 1,2 order by 3 desc</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Dead tuples that need to be recycled</caption>
+  <tr>
+    <th align="center">current_database</th>
+    <th align="center">schemaname</th>
+    <th align="center">relname</th>
+    <th align="center">n_dead_tup</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Large objects that are not referenced</caption>
+  <tr>
+    <th align="center">datname</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">benchmarksql</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The archive information</caption>
+  <tr>
+    <th align="center">now_xlog</th>
+    <th align="center">archived_count</th>
+    <th align="center">last_archived_wal</th>
+    <th align="center">last_archived_time</th>
+    <th align="center">failed_count</th>
+    <th align="center">last_failed_wal</th>
+    <th align="center">last_failed_time</th>
+    <th align="center">stats_reset</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">000000340000000200000093</td>
+    <td align="right">4</td>
+    <td align="left">000000340000000200000092</td>
+    <td align="left">2018-09-27 09:34:38.574841+08</td>
+    <td align="right">0</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">2018-09-18 15:44:49.761187+08</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>The stream the delay information</caption>
+  <tr>
+    <th align="center">sent_delay</th>
+    <th align="center">write_delay</th>
+    <th align="center">flush_delay</th>
+    <th align="center">replay_delay</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">0 bytes</td>
+    <td align="left">0 bytes</td>
+    <td align="left">0 bytes</td>
+    <td align="left">0 bytes</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>SLOT delay;</caption>
+  <tr>
+    <th align="center">slot_name</th>
+    <th align="center">plugin</th>
+    <th align="center">slot_type</th>
+    <th align="center">database</th>
+    <th align="center">active</th>
+    <th align="center">xmin</th>
+    <th align="center">catalog_xmin</th>
+    <th align="center">restart_delay</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">hgha104</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">physical</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">t</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>User password expiration time</caption>
+  <tr>
+    <th align="center">rolname</th>
+    <th align="center">rolvaliduntil</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_monitor</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_read_all_settings</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_read_all_stats</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_stat_scan_tables</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_signal_backend</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">rep</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">benchmarksql</td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Locks in database</caption>
+  <tr>
+    <th align="center">locktype</th>
+    <th align="center">datname</th>
+    <th align="center">relation</th>
+    <th align="center">page</th>
+    <th align="center">tuple</th>
+    <th align="center">virtualxid</th>
+    <th align="center">transactionid</th>
+    <th align="center">classid</th>
+    <th align="center">objid</th>
+    <th align="center">objsubid</th>
+    <th align="center">lock_conflict</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Lock wait</caption>
+  <tr>
+    <th align="center">locktype</th>
+    <th align="center">r_mode</th>
+    <th align="center">r_user</th>
+    <th align="center">r_db</th>
+    <th align="center">relation</th>
+    <th align="center">r_pid</th>
+    <th align="center">r_xact_start</th>
+    <th align="center">r_query_start</th>
+    <th align="center">r_locktime</th>
+    <th align="center">r_query</th>
+    <th align="center">w_mode</th>
+    <th align="center">w_pid</th>
+    <th align="center">w_xact_start</th>
+    <th align="center">w_query_start</th>
+    <th align="center">w_locktime</th>
+    <th align="center">w_query</th>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Table expansion check</caption>
+  <tr>
+    <th align="center">db</th>
+    <th align="center">schemaname</th>
+    <th align="center">tablename</th>
+    <th align="center">tups</th>
+    <th align="center">pages</th>
+    <th align="center">otta</th>
+    <th align="center">tbloat</th>
+    <th align="center">wastedpages</th>
+    <th align="center">wastedbytes</th>
+    <th align="center">wastedsize</th>
+    <th align="center">iname</th>
+    <th align="center">itups</th>
+    <th align="center">ipages</th>
+    <th align="center">iotta</th>
+    <th align="center">ibloat</th>
+    <th align="center">wastedipages</th>
+    <th align="center">wastedibytes</th>
+    <th align="center">wastedisize</th>
+    <th align="center">totalwastedbytes</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">pgbench_accounts</td>
+    <td align="right">100000</td>
+    <td align="right">2012</td>
+    <td align="right">1616</td>
+    <td align="right">1.2</td>
+    <td align="right">396</td>
+    <td align="right">3244032</td>
+    <td align="left">3244032 bytes</td>
+    <td align="left">pgbench_accounts_pkey</td>
+    <td align="right">100000</td>
+    <td align="right">276</td>
+    <td align="right">1334</td>
+    <td align="right">0.2</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">3244032</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">bmsql_stock</td>
+    <td align="right">100000</td>
+    <td align="right">4461</td>
+    <td align="right">4259</td>
+    <td align="right">1.0</td>
+    <td align="right">202</td>
+    <td align="right">1654784</td>
+    <td align="left">1654784 bytes</td>
+    <td align="left">bmsql_stock_pkey</td>
+    <td align="right">100000</td>
+    <td align="right">276</td>
+    <td align="right">3977</td>
+    <td align="right">0.1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">1654784</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">bmsql_customer</td>
+    <td align="right">30000</td>
+    <td align="right">2267</td>
+    <td align="right">2159</td>
+    <td align="right">1.1</td>
+    <td align="right">108</td>
+    <td align="right">884736</td>
+    <td align="left">884736 bytes</td>
+    <td align="left">bmsql_customer_pkey</td>
+    <td align="right">30000</td>
+    <td align="right">117</td>
+    <td align="right">2093</td>
+    <td align="right">0.1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">884736</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">bmsql_customer</td>
+    <td align="right">30000</td>
+    <td align="right">2267</td>
+    <td align="right">2159</td>
+    <td align="right">1.1</td>
+    <td align="right">108</td>
+    <td align="right">884736</td>
+    <td align="left">884736 bytes</td>
+    <td align="left">bmsql_customer_idx1</td>
+    <td align="right">30000</td>
+    <td align="right">207</td>
+    <td align="right">2093</td>
+    <td align="right">0.1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">884736</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">public</td>
+    <td align="left">bmsql_item</td>
+    <td align="right">100000</td>
+    <td align="right">1300</td>
+    <td align="right">1224</td>
+    <td align="right">1.1</td>
+    <td align="right">76</td>
+    <td align="right">622592</td>
+    <td align="left">622592 bytes</td>
+    <td align="left">bmsql_item_pkey</td>
+    <td align="right">100000</td>
+    <td align="right">276</td>
+    <td align="right">1028</td>
+    <td align="right">0.3</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0 bytes</td>
+    <td align="right">622592</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Index expansion check</caption>
+  <tr>
+    <th align="center">db</th>
+    <th align="center">schemaname</th>
+    <th align="center">tablename</th>
+    <th align="center">tups</th>
+    <th align="center">pages</th>
+    <th align="center">otta</th>
+    <th align="center">tbloat</th>
+    <th align="center">wastedpages</th>
+    <th align="center">wastedbytes</th>
+    <th align="center">wastedsize</th>
+    <th align="center">iname</th>
+    <th align="center">itups</th>
+    <th align="center">ipages</th>
+    <th align="center">iotta</th>
+    <th align="center">ibloat</th>
+    <th align="center">wastedipages</th>
+    <th align="center">wastedibytes</th>
+    <th align="center">wastedisize</th>
+    <th align="center">totalwastedbytes</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_hba_file_rules</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left"><br />
+?<br />
+</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_seclabel</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left">pg_seclabel_object_index</td>
+    <td align="right">0</td>
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">1</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_amop_oid_index</td>
+    <td align="right">709</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left"><br />
+?<br />
+</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">pg_catalog</td>
+    <td align="left">pg_opfamily</td>
+    <td align="right">115</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left">pg_opfamily_oid_index</td>
+    <td align="right">115</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">2</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">postgres</td>
+    <td align="left">information_schema</td>
+    <td align="left">administrable_role_authorizations</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="left"><br />
+?<br />
+</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0.0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="left">0<br />
+ bytes<br />
+</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <caption>Pg_stat_statements information</caption>
+  <tr>
+    <th align="center">case</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_stat_statements has benn installed.</td>
+  </tr>
+</table>
+
+<table border="1" class="tablecss">
+  <tr valign="top">
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+

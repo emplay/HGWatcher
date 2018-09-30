@@ -1,0 +1,361 @@
+Linux HGW v1.0.0
+
+zzz ***Sat Sep 29 11:01:32 CST 2018
+USER       PID  PPID PRI %CPU %MEM    VSZ   RSS WCHAN  S  STARTED     TIME COMMAND
+postgres  1033     1  19  0.0  4.7 2539464 185668 poll_s S   Sep 27 00:00:08 /usr/pgsql-10/bin/postmaster -D /var/lib/pgsql/10/data/
+postgres  1337  1033  19  0.0  3.4 2539464 133388 ep_pol S   Sep 27 00:01:10 postgres: hgha: wal writer process   
+etcd      1025     1  19  1.9  1.6 10777516 63604 futex_ S   Sep 27 00:59:02 /usr/bin/etcd --name=pgha3 --data-dir=/var/lib/etcd/pgha3.etcd --listen-peer-urls=http://192.168.80.103:2380,http://127.0.0.1:2380 --listen-client-urls=http://192.168.80.103:2379,http://127.0.0.1:2379 --initial-advertise-peer-urls=http://192.168.80.103:2380 --advertise-client-urls=http://192.168.80.103:2379 --initial-cluster=pgha3=http://192.168.80.103:2380,pgha4=http://192.168.80.104:2380 --initial-cluster-token=etcd-cluster --initial-cluster-state=new
+highgo   30979     1  19  0.0  1.4 1296432 57244 poll_s S 17:12:41 00:00:01 /highgo/4.3.2/bin/postgres
+highgo   25636     1  19  0.0  1.4 1296432 57252 poll_s S 16:56:18 00:00:01 /highgo/4.3.2/bin/postgres -D data_bak
+postgres  2094     1  19  0.3  0.7 519632 29500 poll_s S   Sep 27 00:11:20 /usr/bin/python /usr/bin/patroni /usr/patroni/conf/postgresql.yml
+postgres  1335  1033  19  0.0  0.5 2539596 19568 ep_pol S   Sep 27 00:00:00 postgres: hgha: checkpointer process   
+root      1022     1  19  0.0  0.4 573812 17172 poll_s S   Sep 27 00:00:29 /usr/bin/python -Es /usr/sbin/tuned -l -P
+postgres  1336  1033  19  0.0  0.4 2539464 18820 ep_pol S   Sep 27 00:01:08 postgres: hgha: writer process   
+root      1039     1  19  0.0  0.3 692840 13716 poll_s S   Sep 27 00:00:00 /usr/sbin/libvirtd
+polkitd    655     1  19  0.0  0.3 542332 14552 poll_s S   Sep 27 00:00:07 /usr/lib/polkit-1/polkitd --no-debug
+root       458     1  19  0.0  0.2  47508 11104 ep_pol S   Sep 27 00:00:06 /usr/lib/systemd/systemd-journald
+root      1021     1  19  0.0  0.2 226696 10104 poll_s S   Sep 27 00:00:13 /usr/sbin/rsyslogd -n
+highgo   30983 30979  19  0.0  0.2 1296432 9984 poll_s S 17:12:42 00:00:00 postgres: writer process  
+highgo   25640 25636  19  0.0  0.2 1296432 9984 poll_s S 16:56:18 00:00:00 postgres: writer process   
+root      9832  1012  19  0.0  0.1 163480  6076 poll_s S 16:03:10 00:00:01 sshd: root@pts/5
+root      9793  1012  19  0.0  0.1 163788  6244 poll_s S 16:03:09 00:00:01 sshd: root@pts/4
+root      8567     1  19  0.0  0.1 410416  5332 poll_s S   Sep 27 00:00:02 /usr/libexec/packagekitd
+root       677     1  19  0.0  0.1 221164  4724 wait_w S   Sep 27 00:00:00 /usr/bin/abrt-watch-log -F Backtrace /var/log/Xorg.0.log -- /usr/bin/abrt-dump-xorg -xD
+root       662     1  19  0.0  0.1 221164  4728 hrtime S   Sep 27 00:00:00 /usr/bin/abrt-watch-log -F BUG: WARNING: at WARNING: CPU: INFO: possible recursive locking detected ernel BUG at list_del corruption list_add corruption do_IRQ: stack overflow: ear stack overflow (cur: eneral protection fault nable to handle kernel ouble fault: RTNL: assertion failed eek! page_mapcount(page) went negative! adness at NETDEV WATCHDOG ysctl table check failed : nobody cared IRQ handler type mismatch Kernel panic - not syncing: Machine Check Exception: Machine check events logged divide error: bounds: coprocessor segment overrun: invalid TSS: segment not present: invalid opcode: alignment check: stack segment: fpu exception: simd exception: iret exception: /var/log/messages -- /usr/bin/abrt-dump-oops -xtD
+root       661     1  19  0.0  0.1 223644  5704 poll_s S   Sep 27 00:00:00 /usr/sbin/abrtd -d -s
+root       638     1  19  0.0  0.1 430524  7516 poll_s S   Sep 27 00:00:00 /usr/sbin/ModemManager
+root     26308  1012  19  0.0  0.1 163480  6080 poll_s S 10:19:19 00:00:00 sshd: root@pts/0
+root     23523  1012  19  0.0  0.1 163608  6072 poll_s S 09:41:46 00:00:00 sshd: root@notty
+root      2026     1  19  0.0  0.1 396288  4000 poll_s S   Sep 27 00:00:02 /usr/libexec/accounts-daemon
+root      1535  1012  19  0.0  0.1 163480  6072 poll_s S 10:42:35 00:00:00 sshd: root@pts/2
+root         1     0  19  0.0  0.1 142040  4196 ep_pol S   Sep 27 00:00:10 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root      1012     1  19  0.0  0.1 112792  4312 poll_s S   Sep 27 00:00:00 /usr/sbin/sshd -D
+root      1010     1  19  0.0  0.1 197924  4172 ep_pol S   Sep 27 00:00:00 /usr/sbin/cupsd -f
+postgres  2129  1033  19  0.0  0.1 2540164 4028 ep_pol S   Sep 27 00:00:43 postgres: hgha: wal sender process rep 192.168.80.104(47744) streaming 2/93023290
+postgres  2111  1033  19  0.0  0.1 2540672 7344 ep_pol S   Sep 27 00:00:16 postgres: hgha: postgres postgres 127.0.0.1(44118) idle
+postfix  23757  1303  19  0.0  0.1  91796  4068 ep_pol S 09:55:37 00:00:00 pickup -l -t unix -u
+postfix   1305  1303  19  0.0  0.1  91972  4316 ep_pol S   Sep 27 00:00:00 qmgr -l -t unix -u
+USER       PID  PPID PRI %CPU %MEM    VSZ   RSS WCHAN  S  STARTED     TIME COMMAND
+rpc        642     1  19  0.0  0.0  69220  1056 poll_s S   Sep 27 00:00:00 /sbin/rpcbind -w
+root      9834  9832  19  0.0  0.0 116756  3404 do_wai S 16:03:10 00:00:00 -bash
+root      9795  9793  19  0.0  0.0 116888  3672 n_tty_ S 16:03:09 00:00:00 -bash
+root         9     2  19  0.0  0.0      0     0 -      R   Sep 27 00:01:03 [rcu_sched]
+root        88     2  19  0.0  0.0      0     0 kaudit S   Sep 27 00:00:00 [kauditd]
+root         8     2  19  0.0  0.0      0     0 rcu_gp S   Sep 27 00:00:00 [rcu_bh]
+root         7     2 139  0.0  0.0      0     0 smpboo S   Sep 27 00:00:00 [migration/0]
+root       719     1  19  0.0  0.0 195080  1228 ep_pol S   Sep 27 00:00:00 /usr/sbin/gssproxy -D
+root       703     1  19  0.0  0.0 115432  1048 do_wai S   Sep 27 00:00:07 /bin/bash /usr/sbin/ksmtuned
+root      7009  6981  19  0.0  0.0 116496   932 pipe_w S 11:01:32 00:00:00 sort -nr -k 6
+root      7008  6981  19  0.0  0.0 155324  1868 -      R 11:01:32 00:00:00 ps -aeo user,pid,ppid,pri,pcpu,pmem,vsize,rssize,wchan,s,start,cputime,command
+root      7004  6976  19  0.0  0.0 161840  2120 hrtime S 11:01:32 00:00:00 top -b -n2 -d1
+root      6986  6941  19  0.0  0.0 107948   352 hrtime S 11:01:32 00:00:00 sleep 30
+root      6981  6941  19  0.0  0.0 113176  1452 do_wai S 11:01:32 00:00:00 /bin/sh ./psmemsub.sh /HGWatcher/archive/HGWps/pgha3_ps_18.09.29.1100.dat ps -elf 1
+root      6976  6941  19  0.0  0.0 113176  1396 do_wai S 11:01:32 00:00:00 /bin/sh ./xtop.sh /HGWatcher/archive/HGWtop/pgha3_top_18.09.29.1100.dat 1
+root      6974  6966  19  0.0  0.0 107992   836 sys_pa S 11:01:32 00:00:00 iostat -xk 1 3
+root      6966  6941  19  0.0  0.0 113176  1408 do_wai S 11:01:32 00:00:00 /bin/sh ./iosub.sh /HGWatcher/archive/HGWiostat/pgha3_iostat_18.09.29.1100.dat iostat -xk 1 3 1
+root      6965  6959  19  0.0  0.0 107980   792 sys_pa S 11:01:32 00:00:00 mpstat -P ALL 1 2
+root      6961  6954  19  0.0  0.0 152576  1392 hrtime S 11:01:32 00:00:00 vmstat 1 3
+root      6959  6941  19  0.0  0.0 113176  1408 do_wai S 11:01:32 00:00:00 /bin/sh ./mpsub.sh /HGWatcher/archive/HGWmpstat/pgha3_mpstat_18.09.29.1100.dat mpstat -P ALL 1 2 1
+root      6957  6953  19  0.0  0.0 113536   968 pipe_w S 11:01:32 00:00:00 awk {print $2}
+root      6956  6953  19  0.0  0.0 231792  3460 do_wai S 11:01:32 00:00:00 su - postgres -c /usr/pgsql-10/bin/psql -h 127.0.0.1 -p 5432 -U postgres -d postgres -A -q -t -c "SELECT version()"
+root      6954  6941  19  0.0  0.0 113176  1412 do_wai S 11:01:32 00:00:00 /bin/sh ./vmsub.sh /HGWatcher/archive/HGWvmstat/pgha3_vmstat_18.09.29.1100.dat vmstat 1 3 1
+root      6953  6940  19  0.0  0.0 113176   620 do_wai S 11:01:32 00:00:00 sh /HGWatcher/HGWatcher.sh
+root      6948  6939  19  0.0  0.0 107948   348 hrtime S 11:01:32 00:00:00 sleep 60
+root      6941     1  19  0.0  0.0 113308   836 do_wai S 11:01:32 00:00:00 sh /HGWatcher/HGWatcher.sh
+root      6940     1  19  0.0  0.0 113176   756 pipe_w S 11:01:32 00:00:00 sh /HGWatcher/HGWatcher.sh
+root      6939     1  19  0.0  0.0 113172  1396 do_wai S 11:01:32 00:00:00 /bin/sh ./HGWatcherFM.sh 168 /HGWatcher/archive
+root       690     1  19  0.0  0.0   7124   280 poll_s S   Sep 27 00:00:00 /usr/sbin/mcelog --ignorenodev --daemon --syslog
+root      6862   703  19  0.0  0.0 107948   352 hrtime S 11:01:13 00:00:00 sleep 60
+root      6850     2  19  0.0  0.0      0     0 worker S 11:01:01 00:00:00 [kworker/u2:1]
+root       674     1  19  0.0  0.0  24492  2420 hrtime S   Sep 27 00:00:00 /usr/sbin/smartd -n -q never
+root      6592     2  19  0.0  0.0      0     0 worker S 10:58:47 00:00:00 [kworker/0:0]
+root       654     1  19  0.0  0.0  13216   748 poll_s S   Sep 27 00:00:30 /sbin/rngd -f
+root      6514     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 60m
+root       640     1   0  0.0  0.0  16884  1436 poll_s S   Sep 27 00:00:00 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+root       639     1  19  0.0  0.0  26508  1956 ep_pol S   Sep 27 00:00:03 /usr/lib/systemd/systemd-logind
+root       617   615  23  0.0  0.0  55596  1412 poll_s S   Sep 27 00:00:00 /usr/sbin/sedispatch
+root       615   613  27  0.0  0.0  84552   928 futex_ S   Sep 27 00:00:01 /sbin/audispd
+root       613     1  23  0.0  0.0  55508   900 ep_pol S   Sep 27 00:00:01 /sbin/auditd
+root       611     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xprtiod]
+root       610     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [rpciod]
+root        57     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [deferwq]
+root       553     2  19  0.0  0.0      0     0 xfsail S   Sep 27 00:00:00 [xfsaild/sda1]
+root       550     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-eofblocks/s]
+root       548     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-log/sda1]
+root       546     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-reclaim/sda]
+root       544     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-cil/sda1]
+root       542     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-conv/sda1]
+root       540     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-data/sda1]
+root       538     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-buf/sda1]
+root         5     2  39  0.0  0.0      0     0 worker S   Sep 27 00:00:00 [kworker/0:0H]
+root       493     1  19  0.0  0.0  45040  2448 ep_pol S   Sep 27 00:00:00 /usr/lib/systemd/systemd-udevd
+root      4830     2  19  0.0  0.0      0     0 worker S 10:53:46 00:00:00 [kworker/0:3]
+root        43     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [ipv6_addrconf]
+root        42     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kpsmoused]
+root        41     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kaluad]
+root        40     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kmpath_rdacd]
+root       386     2  19  0.0  0.0      0     0 xfsail S   Sep 27 00:01:12 [xfsaild/dm-0]
+root       385     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-eofblocks/d]
+root       384     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-log/dm-0]
+root       383     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-reclaim/dm-]
+root        38     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kthrotld]
+root       382     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-cil/dm-0]
+root       381     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-conv/dm-0]
+root       380     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-data/dm-0]
+root       379     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-buf/dm-0]
+root       378     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs_mru_cache]
+root       377     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfsalloc]
+root       376     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       363     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       362     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kdmflush]
+root       352     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       351     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kdmflush]
+root         3     2  19  0.0  0.0      0     0 smpboo S   Sep 27 00:00:34 [ksoftirqd/0]
+root       309     2  39  0.0  0.0      0     0 worker S   Sep 27 00:00:15 [kworker/0:1H]
+root        30     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [crypto]
+root        29     2   0  0.0  0.0      0     0 khugep S   Sep 27 00:00:00 [khugepaged]
+root        28     2  14  0.0  0.0      0     0 ksm_sc S   Sep 27 00:00:00 [ksmd]
+root       279     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_2]
+root       277     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_2]
+root       276     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_1]
+root       275     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_1]
+root       274     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_0]
+root       273     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_0]
+root        27     2  19  0.0  0.0      0     0 kswapd S   Sep 27 00:00:00 [kswapd0]
+root     26310 26308  19  0.0  0.0 116888  3680 n_tty_ S 10:19:20 00:00:00 -bash
+root       261     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [ata_sff]
+root     26086     2  19  0.0  0.0      0     0 worker S   Sep 27 00:00:01 [kworker/u2:2]
+root     26073     2  19  0.0  0.0      0     0 worker S 03:55:01 00:00:03 [kworker/u2:0]
+root      2429     2  19  0.0  0.0      0     0 worker S 10:45:45 00:00:00 [kworker/0:2]
+root     23561  9834  19  0.0  0.0 231796  3472 do_wai S 16:49:14 00:00:00 su - highgo
+root     23533 23523  19  0.0  0.0  72160  2680 poll_s S 09:41:56 00:00:00 /usr/libexec/openssh/sftp-server
+root     23525 23523  19  0.0  0.0  72160  2916 poll_s S 09:41:48 00:00:00 /usr/libexec/openssh/sftp-server
+root        21     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [edac-poller]
+root      2033     1  19  0.0  0.0 110088   872 n_tty_ S   Sep 27 00:00:00 /sbin/agetty --noclear tty1 linux
+root        20     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [md]
+root         2     0  19  0.0  0.0      0     0 kthrea S   Sep 27 00:00:00 [kthreadd]
+root        19     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kblockd]
+root        18     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root        17     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kintegrityd]
+root      1631  1630  19  0.0  0.0  53824   376 pipe_w S   Sep 27 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+root        16     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [writeback]
+root      1537  1535  19  0.0  0.0 116888  3692 n_tty_ S 10:42:36 00:00:00 -bash
+root        15     2  19  0.0  0.0      0     0 watchd S   Sep 27 00:00:00 [khungtaskd]
+root        14     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [netns]
+root        13     2  19  0.0  0.0      0     0 devtmp S   Sep 27 00:00:00 [kdevtmpfs]
+root      1303     1  19  0.0  0.0  91692  2240 ep_pol S   Sep 27 00:00:01 /usr/libexec/postfix/master -w
+root        11     2 139  0.0  0.0      0     0 smpboo S   Sep 27 00:00:01 [watchdog/0]
+root      1099     1  19  0.0  0.0 107964   616 hrtime S   Sep 27 00:00:00 rhnsd
+root      1058     1  19  0.0  0.0 126284  1616 hrtime S   Sep 27 00:00:00 /usr/sbin/crond -n
+root      1050     1  19  0.0  0.0  25904   952 hrtime S   Sep 27 00:00:00 /usr/sbin/atd -f
+root      1035     1  19  0.0  0.0 115696   720 poll_s S   Sep 27 00:00:00 /usr/bin/rhsmcertd
+root        10     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [lru-add-drain]
+postgres  6973  6956  19  0.0  0.0 115296  1532 pipe_w S 11:01:32 00:00:00 -bash -c /usr/pgsql-10/bin/psql -h 127.0.0.1 -p 5432 -U postgres -d postgres -A -q -t -c "SELECT version()"
+postgres  6425     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+postgres  6388     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+postgres  1341  1033  19  0.0  0.0 2539788 2544 ep_pol S   Sep 27 00:00:00 postgres: hgha: bgworker: logical replication launcher  
+postgres  1340  1033  19  0.0  0.0 253472  2256 ep_pol S   Sep 27 00:00:14 postgres: hgha: stats collector process   
+postgres  1339  1033  19  0.0  0.0 253332  2044 ep_pol S   Sep 27 00:00:00 postgres: hgha: archiver process   last was 000000340000000200000092
+postgres  1338  1033  19  0.0  0.0 2539984 3156 ep_pol S   Sep 27 00:00:05 postgres: hgha: autovacuum launcher process   
+postgres  1306  1033  19  0.0  0.0 251212  2080 ep_pol S   Sep 27 00:00:00 postgres: hgha: logger process   
+nobody    1630     1  19  0.0  0.0  53852  1116 poll_s S   Sep 27 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+libstor+   649     1  19  0.0  0.0   8576   824 poll_s S   Sep 27 00:00:00 /usr/bin/lsmd -d
+highgo    6515     1  19  0.0  0.0 107948   348 hrtime S 10:58:34 00:00:00 sleep 600
+highgo    6471     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+highgo   30986 30979  19  0.0  0.0 189356  1792 poll_s S 17:12:42 00:00:02 postgres: stats collector process  
+highgo   30985 30979  19  0.0  0.0 1296976 2796 poll_s S 17:12:42 00:00:00 postgres: autovacuum launcher process  
+highgo   30984 30979  19  0.0  0.0 1296432 1580 poll_s S 17:12:42 00:00:00 postgres: wal writer process  
+highgo   30982 30979  19  0.0  0.0 1296432 1792 poll_s S 17:12:42 00:00:00 postgres: checkpointer process  
+highgo   30980 30979  19  0.0  0.0 187100  1640 poll_s S 17:12:42 00:00:00 postgres: logger process  
+highgo   25643 25636  19  0.0  0.0 189356  1792 poll_s S 16:56:18 00:00:02 postgres: stats collector process   
+highgo   25642 25636  19  0.0  0.0 1296976 2800 poll_s S 16:56:18 00:00:00 postgres: autovacuum launcher process  
+highgo   25641 25636  19  0.0  0.0 1296432 1580 poll_s S 16:56:18 00:00:00 postgres: wal writer process   
+highgo   25639 25636  19  0.0  0.0 1296432 1792 poll_s S 16:56:18 00:00:00 postgres: checkpointer process   
+highgo   25637 25636  19  0.0  0.0 187100  1640 poll_s S 16:56:18 00:00:00 postgres: logger process   
+highgo   23562 23561  19  0.0  0.0 116844  3624 n_tty_ S 16:49:14 00:00:00 -bash
+dbus       641     1  19  0.0  0.0  61392  3304 ep_pol S   Sep 27 00:00:10 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+avahi      706   665  19  0.0  0.0  62112   396 unix_s S   Sep 27 00:00:00 avahi-daemon: chroot helper
+avahi      665     1  19  0.0  0.0  62244  2336 poll_s S   Sep 27 00:00:20 avahi-daemon: running [pgha3.local]
+
+zzz ***Sat Sep 29 11:02:02 CST 2018
+USER       PID  PPID PRI %CPU %MEM    VSZ   RSS WCHAN  S  STARTED     TIME COMMAND
+postgres  1033     1  19  0.0  4.7 2539464 185668 poll_s S   Sep 27 00:00:08 /usr/pgsql-10/bin/postmaster -D /var/lib/pgsql/10/data/
+postgres  1337  1033  19  0.0  3.4 2539464 133388 ep_pol S   Sep 27 00:01:10 postgres: hgha: wal writer process   
+etcd      1025     1  19  1.9  1.6 10777516 63604 futex_ S   Sep 27 00:59:02 /usr/bin/etcd --name=pgha3 --data-dir=/var/lib/etcd/pgha3.etcd --listen-peer-urls=http://192.168.80.103:2380,http://127.0.0.1:2380 --listen-client-urls=http://192.168.80.103:2379,http://127.0.0.1:2379 --initial-advertise-peer-urls=http://192.168.80.103:2380 --advertise-client-urls=http://192.168.80.103:2379 --initial-cluster=pgha3=http://192.168.80.103:2380,pgha4=http://192.168.80.104:2380 --initial-cluster-token=etcd-cluster --initial-cluster-state=new
+highgo   30979     1  19  0.0  1.4 1296432 57244 poll_s S 17:12:41 00:00:01 /highgo/4.3.2/bin/postgres
+highgo   25636     1  19  0.0  1.4 1296432 57252 poll_s S 16:56:18 00:00:01 /highgo/4.3.2/bin/postgres -D data_bak
+postgres  2094     1  19  0.3  0.7 519632 29500 -      R   Sep 27 00:11:20 /usr/bin/python /usr/bin/patroni /usr/patroni/conf/postgresql.yml
+postgres  1335  1033  19  0.0  0.5 2539596 19568 ep_pol S   Sep 27 00:00:00 postgres: hgha: checkpointer process   
+root      1022     1  19  0.0  0.4 573812 17172 poll_s S   Sep 27 00:00:29 /usr/bin/python -Es /usr/sbin/tuned -l -P
+postgres  1336  1033  19  0.0  0.4 2539464 18820 ep_pol S   Sep 27 00:01:08 postgres: hgha: writer process   
+root      1039     1  19  0.0  0.3 692840 13716 poll_s S   Sep 27 00:00:00 /usr/sbin/libvirtd
+polkitd    655     1  19  0.0  0.3 542332 14552 poll_s S   Sep 27 00:00:07 /usr/lib/polkit-1/polkitd --no-debug
+root       458     1  19  0.0  0.2  47508 11144 ep_pol S   Sep 27 00:00:06 /usr/lib/systemd/systemd-journald
+root      1021     1  19  0.0  0.2 226696 10116 poll_s S   Sep 27 00:00:13 /usr/sbin/rsyslogd -n
+highgo   30983 30979  19  0.0  0.2 1296432 9984 poll_s S 17:12:42 00:00:00 postgres: writer process  
+highgo   25640 25636  19  0.0  0.2 1296432 9984 poll_s S 16:56:18 00:00:00 postgres: writer process   
+root      9832  1012  19  0.0  0.1 163480  6076 poll_s S 16:03:10 00:00:01 sshd: root@pts/5
+root      9793  1012  19  0.0  0.1 163788  6244 poll_s S 16:03:09 00:00:01 sshd: root@pts/4
+root      8567     1  19  0.0  0.1 410416  5332 poll_s S   Sep 27 00:00:02 /usr/libexec/packagekitd
+root       677     1  19  0.0  0.1 221164  4724 wait_w S   Sep 27 00:00:00 /usr/bin/abrt-watch-log -F Backtrace /var/log/Xorg.0.log -- /usr/bin/abrt-dump-xorg -xD
+root       662     1  19  0.0  0.1 221164  4728 wait_w S   Sep 27 00:00:00 /usr/bin/abrt-watch-log -F BUG: WARNING: at WARNING: CPU: INFO: possible recursive locking detected ernel BUG at list_del corruption list_add corruption do_IRQ: stack overflow: ear stack overflow (cur: eneral protection fault nable to handle kernel ouble fault: RTNL: assertion failed eek! page_mapcount(page) went negative! adness at NETDEV WATCHDOG ysctl table check failed : nobody cared IRQ handler type mismatch Kernel panic - not syncing: Machine Check Exception: Machine check events logged divide error: bounds: coprocessor segment overrun: invalid TSS: segment not present: invalid opcode: alignment check: stack segment: fpu exception: simd exception: iret exception: /var/log/messages -- /usr/bin/abrt-dump-oops -xtD
+root       661     1  19  0.0  0.1 223644  5704 poll_s S   Sep 27 00:00:00 /usr/sbin/abrtd -d -s
+root       638     1  19  0.0  0.1 430524  7516 poll_s S   Sep 27 00:00:00 /usr/sbin/ModemManager
+root     26308  1012  19  0.0  0.1 163480  6080 poll_s S 10:19:19 00:00:00 sshd: root@pts/0
+root     23523  1012  19  0.0  0.1 163608  6072 poll_s S 09:41:46 00:00:00 sshd: root@notty
+root      2026     1  19  0.0  0.1 396288  4000 poll_s S   Sep 27 00:00:02 /usr/libexec/accounts-daemon
+root      1535  1012  19  0.0  0.1 163480  6072 poll_s S 10:42:35 00:00:00 sshd: root@pts/2
+root         1     0  19  0.0  0.1 142040  4196 ep_pol S   Sep 27 00:00:10 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root      1012     1  19  0.0  0.1 112792  4312 poll_s S   Sep 27 00:00:00 /usr/sbin/sshd -D
+root      1010     1  19  0.0  0.1 197924  4172 ep_pol S   Sep 27 00:00:00 /usr/sbin/cupsd -f
+postgres  2129  1033  19  0.0  0.1 2540164 4028 ep_pol S   Sep 27 00:00:43 postgres: hgha: wal sender process rep 192.168.80.104(47744) streaming 2/93023290
+postgres  2111  1033  19  0.0  0.1 2540672 7344 ep_pol S   Sep 27 00:00:16 postgres: hgha: postgres postgres 127.0.0.1(44118) idle
+postfix  23757  1303  19  0.0  0.1  91796  4068 ep_pol S 09:55:37 00:00:00 pickup -l -t unix -u
+postfix   1305  1303  19  0.0  0.1  91972  4316 ep_pol S   Sep 27 00:00:00 qmgr -l -t unix -u
+USER       PID  PPID PRI %CPU %MEM    VSZ   RSS WCHAN  S  STARTED     TIME COMMAND
+rpc        642     1  19  0.0  0.0  69220  1056 poll_s S   Sep 27 00:00:00 /sbin/rpcbind -w
+root      9834  9832  19  0.0  0.0 116756  3404 do_wai S 16:03:10 00:00:00 -bash
+root      9795  9793  19  0.0  0.0 116888  3672 n_tty_ S 16:03:09 00:00:00 -bash
+root         9     2  19  0.0  0.0      0     0 -      R   Sep 27 00:01:03 [rcu_sched]
+root        88     2  19  0.0  0.0      0     0 kaudit S   Sep 27 00:00:00 [kauditd]
+root         8     2  19  0.0  0.0      0     0 rcu_gp S   Sep 27 00:00:00 [rcu_bh]
+root      7246  7225  19  0.0  0.0 116496   936 -      R 11:02:02 00:00:00 sort -nr -k 6
+root      7245  7225  19  0.0  0.0 155324  1872 -      R 11:02:02 00:00:00 ps -aeo user,pid,ppid,pri,pcpu,pmem,vsize,rssize,wchan,s,start,cputime,command
+root      7238  7219  19  0.0  0.0 161840  2124 hrtime S 11:02:02 00:00:00 top -b -n2 -d1
+root      7230  6941  19  0.0  0.0 107948   352 hrtime S 11:02:02 00:00:00 sleep 30
+root      7225  6941  19  0.0  0.0 113176  1448 do_wai S 11:02:02 00:00:00 /bin/sh ./psmemsub.sh /HGWatcher/archive/HGWps/pgha3_ps_18.09.29.1100.dat ps -elf 1
+root      7221  7210  19  0.0  0.0 107992   832 sys_pa S 11:02:02 00:00:00 iostat -xk 1 3
+root      7219  6941  19  0.0  0.0 113176  1392 do_wai S 11:02:02 00:00:00 /bin/sh ./xtop.sh /HGWatcher/archive/HGWtop/pgha3_top_18.09.29.1100.dat 1
+root         7     2 139  0.0  0.0      0     0 smpboo S   Sep 27 00:00:00 [migration/0]
+root      7212  7202  19  0.0  0.0 107980   788 sys_pa S 11:02:02 00:00:00 mpstat -P ALL 1 2
+root      7210  6941  19  0.0  0.0 113176  1416 do_wai S 11:02:02 00:00:00 /bin/sh ./iosub.sh /HGWatcher/archive/HGWiostat/pgha3_iostat_18.09.29.1100.dat iostat -xk 1 3 1
+root      7208  7200  19  0.0  0.0 152576  1396 hrtime S 11:02:02 00:00:00 vmstat 1 3
+root      7202  6941  19  0.0  0.0 113176  1412 do_wai S 11:02:02 00:00:00 /bin/sh ./mpsub.sh /HGWatcher/archive/HGWmpstat/pgha3_mpstat_18.09.29.1100.dat mpstat -P ALL 1 2 1
+root      7200  6941  19  0.0  0.0 113176  1412 do_wai S 11:02:02 00:00:00 /bin/sh ./vmsub.sh /HGWatcher/archive/HGWvmstat/pgha3_vmstat_18.09.29.1100.dat vmstat 1 3 1
+root      7196     2  19  0.0  0.0      0     0 worker S 11:01:47 00:00:00 [kworker/0:1]
+root       719     1  19  0.0  0.0 195080  1228 ep_pol S   Sep 27 00:00:00 /usr/sbin/gssproxy -D
+root      7167  6940  19  0.0  0.0 107948   352 hrtime S 11:01:33 00:00:00 sleep 60m
+root       703     1  19  0.0  0.0 115432  1048 do_wai S   Sep 27 00:00:07 /bin/bash /usr/sbin/ksmtuned
+root      6948  6939  19  0.0  0.0 107948   348 hrtime S 11:01:32 00:00:00 sleep 60
+root      6941     1  19  0.0  0.0 113308   840 do_wai S 11:01:32 00:00:00 sh /HGWatcher/HGWatcher.sh
+root      6940     1  19  0.0  0.0 113176   980 do_wai S 11:01:32 00:00:00 sh /HGWatcher/HGWatcher.sh
+root      6939     1  19  0.0  0.0 113172  1396 do_wai S 11:01:32 00:00:00 /bin/sh ./HGWatcherFM.sh 168 /HGWatcher/archive
+root       690     1  19  0.0  0.0   7124   280 poll_s S   Sep 27 00:00:00 /usr/sbin/mcelog --ignorenodev --daemon --syslog
+root      6862   703  19  0.0  0.0 107948   352 hrtime S 11:01:13 00:00:00 sleep 60
+root      6850     2  19  0.0  0.0      0     0 worker S 11:01:01 00:00:00 [kworker/u2:1]
+root       674     1  19  0.0  0.0  24492  2420 hrtime S   Sep 27 00:00:00 /usr/sbin/smartd -n -q never
+root      6592     2  19  0.0  0.0      0     0 worker S 10:58:47 00:00:00 [kworker/0:0]
+root       654     1  19  0.0  0.0  13216   748 poll_s S   Sep 27 00:00:30 /sbin/rngd -f
+root      6514     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 60m
+root       640     1   0  0.0  0.0  16884  1436 poll_s S   Sep 27 00:00:00 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+root       639     1  19  0.0  0.0  26508  1956 ep_pol S   Sep 27 00:00:03 /usr/lib/systemd/systemd-logind
+root       617   615  23  0.0  0.0  55596  1412 unix_s S   Sep 27 00:00:00 /usr/sbin/sedispatch
+root       615   613  27  0.0  0.0  84552   928 futex_ S   Sep 27 00:00:01 /sbin/audispd
+root       613     1  23  0.0  0.0  55508   900 ep_pol S   Sep 27 00:00:01 /sbin/auditd
+root       611     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xprtiod]
+root       610     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [rpciod]
+root        57     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [deferwq]
+root       553     2  19  0.0  0.0      0     0 xfsail S   Sep 27 00:00:00 [xfsaild/sda1]
+root       550     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-eofblocks/s]
+root       548     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-log/sda1]
+root       546     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-reclaim/sda]
+root       544     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-cil/sda1]
+root       542     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-conv/sda1]
+root       540     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-data/sda1]
+root       538     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-buf/sda1]
+root         5     2  39  0.0  0.0      0     0 worker S   Sep 27 00:00:00 [kworker/0:0H]
+root       493     1  19  0.0  0.0  45040  2448 ep_pol S   Sep 27 00:00:00 /usr/lib/systemd/systemd-udevd
+root      4830     2  19  0.0  0.0      0     0 worker S 10:53:46 00:00:00 [kworker/0:3]
+root        43     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [ipv6_addrconf]
+root        42     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kpsmoused]
+root        41     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kaluad]
+root        40     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kmpath_rdacd]
+root       386     2  19  0.0  0.0      0     0 xfsail S   Sep 27 00:01:12 [xfsaild/dm-0]
+root       385     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-eofblocks/d]
+root       384     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-log/dm-0]
+root       383     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-reclaim/dm-]
+root        38     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kthrotld]
+root       382     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-cil/dm-0]
+root       381     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-conv/dm-0]
+root       380     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-data/dm-0]
+root       379     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs-buf/dm-0]
+root       378     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfs_mru_cache]
+root       377     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [xfsalloc]
+root       376     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       363     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       362     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kdmflush]
+root       352     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root       351     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kdmflush]
+root         3     2  19  0.0  0.0      0     0 smpboo S   Sep 27 00:00:34 [ksoftirqd/0]
+root       309     2  39  0.0  0.0      0     0 worker S   Sep 27 00:00:15 [kworker/0:1H]
+root        30     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [crypto]
+root        29     2   0  0.0  0.0      0     0 khugep S   Sep 27 00:00:00 [khugepaged]
+root        28     2  14  0.0  0.0      0     0 ksm_sc S   Sep 27 00:00:00 [ksmd]
+root       279     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_2]
+root       277     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_2]
+root       276     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_1]
+root       275     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_1]
+root       274     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [scsi_tmf_0]
+root       273     2  19  0.0  0.0      0     0 scsi_e S   Sep 27 00:00:00 [scsi_eh_0]
+root        27     2  19  0.0  0.0      0     0 kswapd S   Sep 27 00:00:00 [kswapd0]
+root     26310 26308  19  0.0  0.0 116888  3680 n_tty_ S 10:19:20 00:00:00 -bash
+root       261     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [ata_sff]
+root     26086     2  19  0.0  0.0      0     0 worker S   Sep 27 00:00:01 [kworker/u2:2]
+root     26073     2  19  0.0  0.0      0     0 worker S 03:55:01 00:00:03 [kworker/u2:0]
+root      2429     2  19  0.0  0.0      0     0 worker S 10:45:45 00:00:00 [kworker/0:2]
+root     23561  9834  19  0.0  0.0 231796  3472 do_wai S 16:49:14 00:00:00 su - highgo
+root     23533 23523  19  0.0  0.0  72160  2680 poll_s S 09:41:56 00:00:00 /usr/libexec/openssh/sftp-server
+root     23525 23523  19  0.0  0.0  72160  2916 poll_s S 09:41:48 00:00:00 /usr/libexec/openssh/sftp-server
+root        21     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [edac-poller]
+root      2033     1  19  0.0  0.0 110088   872 n_tty_ S   Sep 27 00:00:00 /sbin/agetty --noclear tty1 linux
+root        20     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [md]
+root         2     0  19  0.0  0.0      0     0 kthrea S   Sep 27 00:00:00 [kthreadd]
+root        19     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kblockd]
+root        18     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [bioset]
+root        17     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [kintegrityd]
+root      1631  1630  19  0.0  0.0  53824   376 pipe_w S   Sep 27 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+root        16     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [writeback]
+root      1537  1535  19  0.0  0.0 116888  3692 n_tty_ S 10:42:36 00:00:00 -bash
+root        15     2  19  0.0  0.0      0     0 watchd S   Sep 27 00:00:00 [khungtaskd]
+root        14     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [netns]
+root        13     2  19  0.0  0.0      0     0 devtmp S   Sep 27 00:00:00 [kdevtmpfs]
+root      1303     1  19  0.0  0.0  91692  2240 ep_pol S   Sep 27 00:00:01 /usr/libexec/postfix/master -w
+root        11     2 139  0.0  0.0      0     0 smpboo S   Sep 27 00:00:01 [watchdog/0]
+root      1099     1  19  0.0  0.0 107964   616 hrtime S   Sep 27 00:00:00 rhnsd
+root      1058     1  19  0.0  0.0 126284  1616 hrtime S   Sep 27 00:00:00 /usr/sbin/crond -n
+root      1050     1  19  0.0  0.0  25904   952 hrtime S   Sep 27 00:00:00 /usr/sbin/atd -f
+root      1035     1  19  0.0  0.0 115696   720 poll_s S   Sep 27 00:00:00 /usr/bin/rhsmcertd
+root        10     2  39  0.0  0.0      0     0 rescue S   Sep 27 00:00:00 [lru-add-drain]
+postgres  7078  7074  19  0.0  0.0 107948   352 hrtime S 11:01:33 00:00:00 sleep 600
+postgres  7074     1  19  0.0  0.0 115296   444 do_wai S 11:01:33 00:00:00 -bash -c /usr/pgsql-10/bin/psql -h 127.0.0.1 -p 5432 -U postgres -d benchmarksql -A -q -f /HGWatcher/sql/HGWatcher_pg10.sql 1>/HGWatcher/archive/HGdatabase/pgha3_benchmarksql_5432_HGdatabase_18.09.29.1101.html 2>/dev/null & { sleep 600 ; kill 6939 >/dev/null 2>&1 && echo 'psql Timeout'>>/HGWatcher/archive/HGdatabase/pgha3_benchmarksql_5432_HGdatabase_18.09.29.1101.html & } &  >/dev/null 2>&1
+postgres  7040  7036  19  0.0  0.0 107948   348 hrtime S 11:01:32 00:00:00 sleep 600
+postgres  7036     1  19  0.0  0.0 115296   436 do_wai S 11:01:32 00:00:00 -bash -c /usr/pgsql-10/bin/psql -h 127.0.0.1 -p 5432 -U postgres -d postgres -A -q -f /HGWatcher/sql/HGWatcher_pg10.sql 1>/HGWatcher/archive/HGdatabase/pgha3_postgres_5432_HGdatabase_18.09.29.1101.html 2>/dev/null & { sleep 600 ; kill 6939 >/dev/null 2>&1 && echo 'psql Timeout'>>/HGWatcher/archive/HGdatabase/pgha3_postgres_5432_HGdatabase_18.09.29.1101.html & } &  >/dev/null 2>&1
+postgres  6425     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+postgres  6388     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+postgres  1341  1033  19  0.0  0.0 2539788 2544 ep_pol S   Sep 27 00:00:00 postgres: hgha: bgworker: logical replication launcher  
+postgres  1340  1033  19  0.0  0.0 253472  2256 ep_pol S   Sep 27 00:00:14 postgres: hgha: stats collector process   
+postgres  1339  1033  19  0.0  0.0 253332  2044 ep_pol S   Sep 27 00:00:00 postgres: hgha: archiver process   last was 000000340000000200000092
+postgres  1338  1033  19  0.0  0.0 2539984 3156 ep_pol S   Sep 27 00:00:05 postgres: hgha: autovacuum launcher process   
+postgres  1306  1033  19  0.0  0.0 251212  2080 ep_pol S   Sep 27 00:00:00 postgres: hgha: logger process   
+nobody    1630     1  19  0.0  0.0  53852  1116 poll_s S   Sep 27 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+libstor+   649     1  19  0.0  0.0   8576   824 poll_s S   Sep 27 00:00:00 /usr/bin/lsmd -d
+highgo    7168  7166  19  0.0  0.0 107948   348 hrtime S 11:01:33 00:00:00 sleep 600
+highgo    7166     1  19  0.0  0.0 115300   444 do_wai S 11:01:33 00:00:00 -bash -c /highgo/4.3.2/bin/psql -h 127.0.0.1 -p 5866 -U highgo -d highgo -A -q -f /HGWatcher/sql/HGWatcher_pg9.sql 1>/HGWatcher/archive/HGdatabase/pgha3_highgo_5866_HGdatabase_18.09.29.1101.html 2>/dev/null & { sleep 600 ; kill 6939 >/dev/null 2>&1 && echo 'psql Timeout '>>/HGWatcher/archive/HGdatabase/pgha3_highgo_5866_HGdatabase_18.09.29.1101.html & } &  >/dev/null 2>&1
+highgo    7124  7120  19  0.0  0.0 107948   348 hrtime S 11:01:33 00:00:00 sleep 600
+highgo    7120     1  19  0.0  0.0 115300   444 do_wai S 11:01:33 00:00:00 -bash -c /highgo/4.3.2/bin/psql -h 127.0.0.1 -p 5877 -U highgo -d highgo -A -q -f /HGWatcher/sql/HGWatcher_pg9.sql 1>/HGWatcher/archive/HGdatabase/pgha3_highgo_5877_HGdatabase_18.09.29.1101.html 2>/dev/null & { sleep 600 ; kill 6939 >/dev/null 2>&1 && echo 'psql Timeout '>>/HGWatcher/archive/HGdatabase/pgha3_highgo_5877_HGdatabase_18.09.29.1101.html & } &  >/dev/null 2>&1
+highgo    6515     1  19  0.0  0.0 107948   348 hrtime S 10:58:34 00:00:00 sleep 600
+highgo    6471     1  19  0.0  0.0 107948   352 hrtime S 10:58:34 00:00:00 sleep 600
+highgo   30986 30979  19  0.0  0.0 189356  1792 poll_s S 17:12:42 00:00:02 postgres: stats collector process  
+highgo   30985 30979  19  0.0  0.0 1296976 2796 poll_s S 17:12:42 00:00:00 postgres: autovacuum launcher process  
+highgo   30984 30979  19  0.0  0.0 1296432 1580 poll_s S 17:12:42 00:00:00 postgres: wal writer process  
+highgo   30982 30979  19  0.0  0.0 1296432 1792 poll_s S 17:12:42 00:00:00 postgres: checkpointer process  
+highgo   30980 30979  19  0.0  0.0 187100  1640 poll_s S 17:12:42 00:00:00 postgres: logger process  
+highgo   25643 25636  19  0.0  0.0 189356  1792 poll_s S 16:56:18 00:00:02 postgres: stats collector process   
+highgo   25642 25636  19  0.0  0.0 1296976 2800 poll_s S 16:56:18 00:00:00 postgres: autovacuum launcher process  
+highgo   25641 25636  19  0.0  0.0 1296432 1580 poll_s S 16:56:18 00:00:00 postgres: wal writer process   
+highgo   25639 25636  19  0.0  0.0 1296432 1792 poll_s S 16:56:18 00:00:00 postgres: checkpointer process   
+highgo   25637 25636  19  0.0  0.0 187100  1640 poll_s S 16:56:18 00:00:00 postgres: logger process   
+highgo   23562 23561  19  0.0  0.0 116844  3624 n_tty_ S 16:49:14 00:00:00 -bash
+dbus       641     1  19  0.0  0.0  61392  3304 ep_pol S   Sep 27 00:00:10 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+avahi      706   665  19  0.0  0.0  62112   396 unix_s S   Sep 27 00:00:00 avahi-daemon: chroot helper
+avahi      665     1  19  0.0  0.0  62244  2336 poll_s S   Sep 27 00:00:20 avahi-daemon: running [pgha3.local]

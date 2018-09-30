@@ -1,0 +1,17 @@
+Linux HGW v1.0.0 pgha3
+SNAP_INTERVAL 30
+CPU_CORES 1
+VCPUS 1
+HGW_ARCHIVE_DEST /HGWatcher/archive
+zzz ***Sat Sep 29 11:01:32 CST 2018
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 6  0      0 2154680   2116 1444824    0    0     7    23  202  209  1  2 97  0  0
+ 1  0      0 2139224   2116 1445252    0    0     0    42 1159 2004 47 53  0  0  0
+ 0  0      0 2152144   2116 1445284    0    0     0     8  689  601 16  8 75  0  0
+zzz ***Sat Sep 29 11:02:02 CST 2018
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 5  0      0 2152644   2116 1445212    0    0     7    23  202  209  1  2 97  0  0
+ 0  0      0 2150868   2116 1445320    0    0     0   280  687  607 10 20 69  1  0
+ 0  0      0 2155364   2116 1445284    0    0     0    84  582  574  7 14 78  0  0

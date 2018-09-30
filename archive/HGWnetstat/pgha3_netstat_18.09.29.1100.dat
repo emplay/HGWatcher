@@ -1,0 +1,215 @@
+Linux HGW v1.0.0
+zzz ***Sat Sep 29 11:01:32 CST 2018
+Kernel Interface table
+Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+enp0s3    1500  6858406      0     68 0       6702219      0      0      0 BMRU
+enp0s8    1500    43094      0  10811 0            29      0      0      0 BMRU
+lo       65536   265732      0      0 0        265732      0      0      0 LRU
+virbr0    1500        0      0      0 0             0      0      0      0 BMU
+virbr0-n  1500        0      0      0 0             0      0      0      0 BM
+Ip:
+    6689876 total packets received
+    0 forwarded
+    644 with unknown protocol
+    0 incoming packets discarded
+    6656252 incoming packets delivered
+    6599448 requests sent out
+Icmp:
+    47 ICMP messages received
+    0 input ICMP message failed.
+    ICMP input histogram:
+        destination unreachable: 43
+        echo requests: 2
+        echo replies: 2
+    47 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 43
+        echo request: 2
+        echo replies: 2
+IcmpMsg:
+        InType0: 2
+        InType3: 43
+        InType8: 2
+        OutType0: 2
+        OutType3: 43
+        OutType8: 2
+Tcp:
+    1704 active connections openings
+    1565 passive connection openings
+    153 failed connection attempts
+    29 connection resets received
+    21 connections established
+    6545872 segments received
+    6872169 segments send out
+    1280 segments retransmited
+    0 bad segments received.
+    3102 resets sent
+Udp:
+    50551 packets received
+    2 packets to unknown port received.
+    0 packet receive errors
+    156 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite:
+TcpExt:
+    1 invalid SYN cookies received
+    6 resets received for embryonic SYN_RECV sockets
+    18 ICMP packets dropped because they were out-of-window
+    1499 TCP sockets finished time wait in fast timer
+    25394 delayed acks sent
+    12 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 843 times
+    30 packets directly queued to recvmsg prequeue.
+    2 bytes directly received in process context from prequeue
+    3115566 packet headers predicted
+    38626 acknowledgments not containing data payload received
+    3320591 predicted acknowledgments
+    14 times recovered from packet loss by selective acknowledgements
+    61 congestion windows recovered without slow start by DSACK
+    24 congestion windows recovered without slow start after partial ack
+    4 timeouts after SACK recovery
+    277 fast retransmits
+    2 retransmits in slow start
+    198 other TCP timeouts
+    TCPLossProbes: 522
+    TCPLossProbeRecovery: 140
+    847 DSACKs sent for old packets
+    1 DSACKs sent for out of order packets
+    517 DSACKs received
+    3 DSACKs for out of order packets received
+    20 connections aborted due to timeout
+    TCPDSACKIgnoredNoUndo: 222
+    TCPSpuriousRTOs: 4
+    TCPSackShifted: 2
+    TCPSackMerged: 22
+    TCPSackShiftFallback: 83
+    IPReversePathFilter: 32217
+    TCPRcvCoalesce: 38487
+    TCPOFOQueue: 10
+    TCPOFOMerge: 1
+    TCPAutoCorking: 1783
+    TCPSynRetrans: 59
+    TCPOrigDataSent: 3721373
+    TCPHystartTrainDetect: 5
+    TCPHystartTrainCwnd: 119
+    TCPACKSkippedSynRecv: 1
+IpExt:
+    InNoRoutes: 149
+    InMcastPkts: 50437
+    OutMcastPkts: 46
+    InBcastPkts: 60426
+    InOctets: 749734878
+    OutOctets: 1035523043
+    InMcastOctets: 7372479
+    OutMcastOctets: 7923
+    InBcastOctets: 5336613
+    InNoECTPkts: 6729972
+zzz ***Sat Sep 29 11:02:02 CST 2018
+Kernel Interface table
+Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+enp0s3    1500  6859638      0     68 0       6703354      0      0      0 BMRU
+enp0s8    1500    43111      0  10815 0            29      0      0      0 BMRU
+lo       65536   266423      0      0 0        266423      0      0      0 LRU
+virbr0    1500        0      0      0 0             0      0      0      0 BMU
+virbr0-n  1500        0      0      0 0             0      0      0      0 BM
+Ip:
+    6691667 total packets received
+    0 forwarded
+    644 with unknown protocol
+    0 incoming packets discarded
+    6658030 incoming packets delivered
+    6601182 requests sent out
+Icmp:
+    47 ICMP messages received
+    0 input ICMP message failed.
+    ICMP input histogram:
+        destination unreachable: 43
+        echo requests: 2
+        echo replies: 2
+    47 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 43
+        echo request: 2
+        echo replies: 2
+IcmpMsg:
+        InType0: 2
+        InType3: 43
+        InType8: 2
+        OutType0: 2
+        OutType3: 43
+        OutType8: 2
+Tcp:
+    1712 active connections openings
+    1573 passive connection openings
+    153 failed connection attempts
+    29 connection resets received
+    21 connections established
+    6547621 segments received
+    6873909 segments send out
+    1281 segments retransmited
+    0 bad segments received.
+    3104 resets sent
+Udp:
+    50573 packets received
+    2 packets to unknown port received.
+    0 packet receive errors
+    156 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+UdpLite:
+TcpExt:
+    1 invalid SYN cookies received
+    6 resets received for embryonic SYN_RECV sockets
+    18 ICMP packets dropped because they were out-of-window
+    1499 TCP sockets finished time wait in fast timer
+    25402 delayed acks sent
+    12 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 849 times
+    30 packets directly queued to recvmsg prequeue.
+    2 bytes directly received in process context from prequeue
+    3116347 packet headers predicted
+    38685 acknowledgments not containing data payload received
+    3321326 predicted acknowledgments
+    14 times recovered from packet loss by selective acknowledgements
+    61 congestion windows recovered without slow start by DSACK
+    24 congestion windows recovered without slow start after partial ack
+    4 timeouts after SACK recovery
+    277 fast retransmits
+    2 retransmits in slow start
+    198 other TCP timeouts
+    TCPLossProbes: 523
+    TCPLossProbeRecovery: 140
+    853 DSACKs sent for old packets
+    1 DSACKs sent for out of order packets
+    518 DSACKs received
+    3 DSACKs for out of order packets received
+    20 connections aborted due to timeout
+    TCPDSACKIgnoredNoUndo: 222
+    TCPSpuriousRTOs: 4
+    TCPSackShifted: 2
+    TCPSackMerged: 22
+    TCPSackShiftFallback: 83
+    IPReversePathFilter: 32230
+    TCPRcvCoalesce: 38498
+    TCPOFOQueue: 10
+    TCPOFOMerge: 1
+    TCPAutoCorking: 1783
+    TCPSynRetrans: 59
+    TCPOrigDataSent: 3722464
+    TCPHystartTrainDetect: 5
+    TCPHystartTrainCwnd: 119
+    TCPACKSkippedSynRecv: 1
+IpExt:
+    InNoRoutes: 149
+    InMcastPkts: 50459
+    OutMcastPkts: 46
+    InBcastPkts: 60433
+    InOctets: 750051208
+    OutOctets: 1035833308
+    InMcastOctets: 7375641
+    OutMcastOctets: 7923
+    InBcastOctets: 5337310
+    InNoECTPkts: 6731770
